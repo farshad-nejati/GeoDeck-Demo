@@ -1,0 +1,19 @@
+{
+  "name": "starter-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.3.3"
+  }
+}
