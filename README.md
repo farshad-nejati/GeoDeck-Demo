@@ -1,4 +1,4 @@
-# New Project
+# GeoDeck App
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
