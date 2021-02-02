@@ -1,0 +1,135 @@
+{
+  "inputs": {
+    "index.css": {
+      "bytes": 41,
+      "imports": []
+    },
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-e66f0a38.js": {
+      "bytes": 8994,
+      "imports": []
+    },
+    "_snowpack/pkg/react.js": {
+      "bytes": 215,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-dom.js": {
+      "bytes": 127469,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-e66f0a38.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/view/logo/logo.svg.proxy.js": {
+      "bytes": 42,
+      "imports": []
+    },
+    "dist/sass/style.css": {
+      "bytes": 638,
+      "imports": []
+    },
+    "dist/App.js": {
+      "bytes": 1236,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/view/logo/logo.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/sass/style.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 491,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/App.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/index.css": {
+      "imports": [],
+      "inputs": {
+        "index.css": {
+          "bytesInOutput": 28
+        }
+      },
+      "bytes": 29
+    },
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 100
+        },
+        "_snowpack/pkg/common/index-e66f0a38.js": {
+          "bytesInOutput": 7140
+        },
+        "_snowpack/pkg/react.js": {
+          "bytesInOutput": 33
+        },
+        "_snowpack/pkg/react-dom.js": {
+          "bytesInOutput": 123820
+        },
+        "dist/view/logo/logo.svg.proxy.js": {
+          "bytesInOutput": 34
+        },
+        "dist/sass/style.css": {
+          "bytesInOutput": 0
+        },
+        "dist/App.js": {
+          "bytesInOutput": 668
+        },
+        "dist/index.js": {
+          "bytesInOutput": 122
+        }
+      },
+      "bytes": 132108
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/sass/style.css": {
+          "bytesInOutput": 489
+        }
+      },
+      "bytes": 490
+    }
+  }
+}
