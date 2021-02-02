@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '@view/logo/logo.svg';
+import '@sass/style.scss';
 
 function App() {
   // Create the count state.
@@ -21,6 +21,7 @@ function App() {
         <p>
           Page has been open for <code>{count}</code> seconds.
         </p>
+        <img src={`./img/1.png`} />
         <p>
           <a
             className="App-link"
