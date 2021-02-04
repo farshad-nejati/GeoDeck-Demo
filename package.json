@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -10,8 +12,11 @@
     "lint": "prettier --check \"src/**/*.{js,jsx}\"",
     "test": "web-test-runner \"src/**/*.test.jsx\""
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.12.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-react-refresh": "^2.4.0",
@@ -22,9 +27,5 @@
     "chai": "^4.2.0",
     "prettier": "^2.0.5",
     "snowpack": "^3.0.1"
-  },
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
   }
 }
