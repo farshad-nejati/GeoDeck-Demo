@@ -1,0 +1,41 @@
+#bkp() { // less namespace
+  .breakpoint(@size;@content) when (@size = 'xs') { // less mixin
+    @media (max-width: 36em) {
+      // < 576px  === antd "xs" size
+      @content();
+    }
+  }
+
+  .breakpoint(@size;@content) when (@size = 'sm') {
+    @media (min-width: 36em) {
+      // >= 576px  === antd "sm" size
+      @content();
+    }
+  }
+
+  .breakpoint(@size;@content) when (@size = 'md') {
+    @media (min-width: 48em) {
+      // >= 768px  === antd "md" size
+      @content();
+    }
+  }
+
+  .breakpoint(@size;@content) when (@size = 'lg') {
+    @media (min-width: 62em) {
+      // >= 992px  === antd "lg" size
+      @content();
+    }
+  }
+  .breakpoint(@size;@content) when (@size = 'xl') {
+    @media (min-width: 75em) {
+      // >= 1200px  === antd "xl" size
+      @content();
+    }
+  }
+  .breakpoint(@size;@content) when (@size = 'xxl') {
+    @media (min-width: 100em) {
+      // >= 1600px  === antd "xxl" size
+      @content();
+    }
+  }
+}
