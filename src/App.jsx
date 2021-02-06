@@ -19,7 +19,13 @@ function App() {
         <React.Suspense fallback={<Spinner />}>
           <Switch>
             {routes.map(({ path, exact, name, component }, index) => (
-              <Route path={path} exact={exact} name={name} component={component} key={index} />
+              <Route
+                path={path}
+                exact={exact}
+                name={name}
+                component={component}
+                key={index}
+              />
             ))}
           </Switch>
         </React.Suspense>
