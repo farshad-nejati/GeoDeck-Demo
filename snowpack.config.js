@@ -27,11 +27,10 @@ module.exports = {
     // "lodash": "lodash-es",
     // Type 2: Local Directory Import Alias (relative to cwd)
     '@app': './src',
-    components: './src/components',
+    "components": './src/components',
     '@api': './src/api',
     '@redux': './src/store',
     '@sass': './src/sass',
-    // '@antd': '~antd/dist/antd.less',
     '@less': './src/less',
     '@view': './src/view',
     '@test': './src/test',
@@ -39,7 +38,7 @@ module.exports = {
 
   routes: [
     /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    {"match": "routes", "src": ".*", "dest": "/index.html"},
   ],
   optimize: {
     bundle: true,
