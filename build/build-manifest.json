@@ -192,7 +192,7 @@
       "imports": []
     },
     "_snowpack/pkg/react-router-dom.js": {
-      "bytes": 39429,
+      "bytes": 67840,
       "imports": [
         {
           "path": "_snowpack/pkg/common/index-4f86a9c5.js",
@@ -213,10 +213,14 @@
       ]
     },
     "dist/components/auth-user/login.js": {
-      "bytes": 195,
+      "bytes": 831,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
           "kind": "import-statement"
         }
       ]
@@ -318,7 +322,7 @@
       "imports": []
     },
     "dist/App.js": {
-      "bytes": 887,
+      "bytes": 904,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -394,7 +398,7 @@
           "bytesInOutput": 6820
         },
         "dist/components/auth-user/login.js": {
-          "bytesInOutput": 110
+          "bytesInOutput": 431
         },
         "dist/components/auth-user/register.js": {
           "bytesInOutput": 118
@@ -415,13 +419,13 @@
           "bytesInOutput": 224
         },
         "_snowpack/pkg/common/index-4f86a9c5.js": {
-          "bytesInOutput": 6922
+          "bytesInOutput": 6909
         },
         "_snowpack/pkg/react.js": {
           "bytesInOutput": 0
         },
         "_snowpack/pkg/common/index-66ba06b7.js": {
-          "bytesInOutput": 123811
+          "bytesInOutput": 123857
         },
         "_snowpack/pkg/react-dom.js": {
           "bytesInOutput": 0
@@ -457,16 +461,16 @@
           "bytesInOutput": 44
         },
         "_snowpack/pkg/common/extends-7477639a.js": {
-          "bytesInOutput": 211
+          "bytesInOutput": 208
         },
         "_snowpack/pkg/react-router-dom.js": {
-          "bytesInOutput": 12456
+          "bytesInOutput": 22069
         },
         "dist/routes.js": {
           "bytesInOutput": 622
         },
         "_snowpack/pkg/history.js": {
-          "bytesInOutput": 2292
+          "bytesInOutput": 2290
         },
         "dist/history.js": {
           "bytesInOutput": 12
@@ -484,7 +488,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 161556
+      "bytes": 171518
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
