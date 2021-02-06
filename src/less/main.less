@@ -1,49 +1,33 @@
-@import '../../node_modules/antd/lib/style/themes/default';
-@import '../../node_modules/antd/dist/antd.less';
 
+//vendor...
+@import './vendors/antd.less'; // antd variable and styles
+
+
+//abstract...
+@import './abstracts/_variables.less';
 @import './abstracts/_mixins.less';
+@import './abstracts/_functions.less';
 
-body {
-  #breakpoint.xs({
-    background-color: red;
-  });
-  #breakpoint.sm({
-    background-color: yellow;
-  });
-  #breakpoint.md({
-    background-color: blue;
-  });
-  #breakpoint.lg({
-    background-color: green;
-  });
-  #breakpoint.xl({
-    background-color: brown;
-  });
-  #breakpoint.xxl ({
-    background-color: pink;
-  });;
+//base...
+@import './base/_base.less';
+@import './base/_typography.less';
+@import './base/_utilities.less';
+@import './base/_animations.less';
 
-  .full-screen({
-    background-color: palegreen;
-  });
+//layout...
+@import './layout/_header.less';
+@import './layout/_footer.less';
+@import './layout/_navigation.less';
+@import './layout/_sidebar.less';
+@import './layout/_forms.less';
 
-  .retina({
-    background-color: darkorange;
-  });
-}
+//themes...
+// @import './themes/_theme.less';
 
-// @primary-color: #0c2d4d; // primary color for all components
-// @primary-color: #1890ff; // primary color for all components
-// @link-color: #1890ff; // link color
-// @success-color: #52c41a; // success state color
-// @warning-color: #faad14; // warning state color
-// @error-color: #f5222d; // error state color
-// @font-size-base: 14px; // major text font size
-// @heading-color: rgba(0, 0, 0, 0.85); // heading text color
-// @text-color: rgba(0, 0, 0, 0.65); // major text color
-// @text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
-// @disabled-color: rgba(0, 0, 0, 0.25); // disable state color
-// @border-radius-base: 2px; // major border radius
-// @border-color-base: #d9d9d9; // major border color
-// @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
-//   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
+//components...
+@import './components/button.less';
+
+
+//pages...
+
+
