@@ -24,12 +24,12 @@
 @body-background: #000014;
 // // Base background color for most components
 @component-background: #262626;
-@border-color-base: #929292; // major border color
 
-
-@heading-color: #929292; // heading text color
+@heading-color: #d5d5d5; // heading text color -- h1 ... h6
 @text-color: #d5d5d5; // major text color
 @text-color-secondary: #929292; // secondary text color
+@border-color-base: fade(#929292, 25%);; // major border color
+// @border-color-base: #33333a; // major border color
 
 
 // // Disabled states
@@ -43,6 +43,10 @@
 // @border-color-inverse: @white;
 // @border-width-base: 1px; // width of the border for a component
 // @border-style-base: solid; // style of a components border
+
+// // Image
+@image-bg: #343434;
+// @image-color: #fff;
 
 // LINK
 @link-color: @text-color;
@@ -58,11 +62,25 @@
 @btn-primary-color: @black;
 @btn-primary-bg: @primary-color;
 
-// Card
 
-// // Image
-@image-bg: #343434;
-// @image-color: #fff;
+// Input
+@input-placeholder-color: @text-color-secondary;
+@input-color: @text-color;
+@input-number-hover-border-color: @input-hover-border-color;
+// @input-number-handler-active-bg: @primary-color;
+// @input-number-handler-hover-bg: @primary-5;
+// @input-number-handler-bg: @component-background;
+// @input-number-handler-border-color: @border-color-base;
+@input-addon-bg: @text-color-secondary;
+// @input-hover-border-color: @primary-5;
+// @input-disabled-bg: @disabled-bg;
+// @input-outline-offset: 0 0;
+@input-icon-hover-color: @text-color;
+// @input-disabled-color: @disabled-color;
+
+
+
+// Card
 
 // modal
 @modal-padding-vertical: 24px; // custom variable
@@ -80,6 +98,17 @@
 
 // icon
 @icon-color-hover: @primary-color;
+
+
+// // Divider
+// @divider-text-padding: 1em;
+// @divider-orientation-margin: 5%;
+@divider-color: @text-color;
+
+
+
+
+ // geodeck demo variables ------------------- //
 
 // @btn-link-hover-bg: transparent;
 // @btn-text-hover-bg: rgba(0, 0, 0, 0.018);
