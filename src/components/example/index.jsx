@@ -8,6 +8,7 @@ import RouteDemo from '../example/route-demo';
 import TypographyDemo from '../example/typography-demo';
 import InputDemo from '../example/input-demo';
 import { Divider } from 'antd';
+import FormDemo from './form-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -62,6 +63,13 @@ const Demo = (props) => {
         <Divider>Card Demo</Divider>
         <div>
           <CardDemo />
+        </div>
+      </div>
+
+      <div style={{width: "100%"}}>
+        <Divider>Form Demo</Divider>
+        <div>
+          <FormDemo />
         </div>
       </div>
 
