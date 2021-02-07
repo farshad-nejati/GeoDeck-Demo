@@ -3,25 +3,25 @@ import { Button } from 'antd';
 
 const ButtonDemo = () => (
   <>
-    <Button style={{ margin: '0 4px' }} type="primary">
+    <Button style={{ margin: '8px' }} type="primary">
       primary
     </Button>
-    <Button style={{ margin: '0 4px' }} type="link">
+    <Button style={{ margin: '8px' }} type="link">
       link
     </Button>
-    <Button style={{ margin: '0 4px' }} type="text">
+    <Button style={{ margin: '8px' }} type="text">
       text
     </Button>
-    <Button style={{ margin: '0 4px' }} type="dashed">
+    <Button style={{ margin: '8px' }} type="dashed">
       dashed
     </Button>
-    <Button style={{ margin: '0 4px' }} type="ghost">
+    <Button style={{ margin: '8px' }} type="ghost">
       ghost
     </Button>
-    <Button style={{ margin: '0 4px' }} disabled>
+    <Button style={{ margin: '8px' }} disabled>
       disable
     </Button>
-    <Button style={{ margin: '0 4px' }} type="default">
+    <Button style={{ margin: '8px' }} type="default">
       default
     </Button>
   </>

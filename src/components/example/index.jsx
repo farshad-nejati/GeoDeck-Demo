@@ -6,6 +6,8 @@ import CardDemo from '../example/card-demo';
 import ButtonDemo from '../example/button-demo';
 import RouteDemo from '../example/route-demo';
 import TypographyDemo from '../example/typography-demo';
+import InputDemo from '../example/input-demo';
+import { Divider } from 'antd';
 
 const Demo = (props) => {
   console.log(props);
@@ -15,34 +17,59 @@ const Demo = (props) => {
         gridGap: '5rem',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        alignItems: 'center',
+        // alignItems: 'center',
         justifyItems: 'center',
         justifyContent: 'center',
-        padding: '32px 8px',
+        padding: '32px 24px',
       }}
     >
-      <div>
-        <ButtonDemo />
+      <div style={{width: "100%"}}>
+        <Divider>Button Demo</Divider>
+        <div>
+          <ButtonDemo />
+        </div>
       </div>
 
-      <div>
-        <RouteDemo />
+      <div style={{width: "100%"}}>
+        <Divider>Route Demo</Divider>
+        <div>
+          <RouteDemo />
+        </div>
       </div>
 
-      <div>
-        <DemoTab />
+      <div style={{width: "100%"}}>
+        <Divider>Tab Demo</Divider>
+        <div>
+          <DemoTab />
+        </div>
       </div>
 
-      <div>
-        <ModalDemo />
+      <div style={{width: "100%"}}>
+        <Divider>Modal Demo</Divider>
+        <div>
+          <ModalDemo />
+        </div>
       </div>
 
-      <div>
-        <CardDemo />
+      <div style={{width: "100%"}}>
+        <Divider>Input Demo</Divider>
+        <div>
+          <InputDemo />
+        </div>
       </div>
 
-      <div>
-        <TypographyDemo />
+      <div style={{width: "100%"}}>
+        <Divider>Card Demo</Divider>
+        <div>
+          <CardDemo />
+        </div>
+      </div>
+
+      <div style={{width: "100%"}}>
+        <Divider>Typography Demo</Divider>
+        <div>
+          <TypographyDemo />
+        </div>
       </div>
     </div>
   );
