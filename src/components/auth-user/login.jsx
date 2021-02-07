@@ -3,11 +3,21 @@ import { Avatar, Button, Card, Col, Row, Skeleton } from 'antd';
 import { Link } from 'react-router-dom';
 import Title from 'antd/lib/typography/Title';
 import Meta from 'antd/lib/card/Meta';
+import ModalCustom from '../modal';
 
 const Login = (props) => {
   console.log(props);
   return (
-    <div style={{ padding: '16px' }}>
+    <div
+      style={{
+        gridGap: '1rem',
+        display: "grid",
+        gridTemplateColumns: '1fr 1fr',
+        alignItems: 'center',
+        justifyItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
       <p>Login</p>
       {/* <DatePicker /> */}
       <br />
@@ -21,26 +31,35 @@ const Login = (props) => {
       </div>
 
       <Row style={{ padding: '16px 0' }}>
-        <Col className="gutter-row" span={6}>
-          <Button type="primary">primary</Button>
-          <Button type="link">link</Button>
-          <Button type="text">text</Button>
-          <Button type="dashed">dashed</Button>
-          <Button type="ghost">ghost</Button>
-          <Button type="default">default</Button>{' '}
-        </Col>
-        <Col className="gutter-row" span={6}></Col>
-        <Col className="gutter-row" span={6}></Col>
-        <Col className="gutter-row" span={6}></Col>
+        <Button style={{ margin: '0 4px' }} type="primary">
+          primary
+        </Button>
+        <Button style={{ margin: '0 4px' }} type="link">
+          link
+        </Button>
+        <Button style={{ margin: '0 4px' }} type="text">
+          text
+        </Button>
+        <Button style={{ margin: '0 4px' }} type="dashed">
+          dashed
+        </Button>
+        <Button style={{ margin: '0 4px' }} type="ghost">
+          ghost
+        </Button>
+        <Button style={{ margin: '0 4px' }} type="default">
+          default
+        </Button>
       </Row>
       <Row style={{ padding: '16px 0' }}>
         <Card
-         bordered={false} 
+          bordered={false}
           style={{ width: 300, marginTop: 16 }}
-          cover={          
-          <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+          cover={
+            <img
+              alt="example"
+              src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+            />
           }
-
         >
           <Skeleton loading={false} avatar active>
             <Meta
@@ -52,6 +71,9 @@ const Login = (props) => {
             />
           </Skeleton>
         </Card>
+      </Row>
+      <Row style={{ padding: '16px 0' }}>
+        <ModalCustom />
       </Row>
 
       <Link to="/register">Register</Link>
