@@ -11,7 +11,7 @@
 // @text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
 // @disabled-color: rgba(0, 0, 0, 0.25); // disable state color
 // @border-radius-base: 2px; // major border radius
-// @border-color-base: #d9d9d9; // major border color
+// @border-color-base: #929292; // major border color
 // @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
 //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
 
@@ -24,10 +24,18 @@
 @body-background: #000014;
 // // Base background color for most components
 @component-background: #262626;
+@border-color-base: #929292; // major border color
+
 
 @heading-color: #929292; // heading text color
 @text-color: #d5d5d5; // major text color
 @text-color-secondary: #929292; // secondary text color
+
+
+// // Disabled states
+@disabled-color: @text-color-secondary;
+@disabled-bg: @text-color;
+
 
 // // Border color
 // @border-color-base: hsv(0, 0, 85%); // base border outline a component
