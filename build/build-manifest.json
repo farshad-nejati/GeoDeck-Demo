@@ -262,8 +262,8 @@
         }
       ]
     },
-    "dist/components/auth-user/login.js": {
-      "bytes": 265,
+    "dist/components/example/route-demo.js": {
+      "bytes": 774,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -271,6 +271,23 @@
         },
         {
           "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-user/login.js": {
+      "bytes": 355,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/example/route-demo.js",
           "kind": "import-statement"
         }
       ]
@@ -512,19 +529,6 @@
         },
         {
           "path": "_snowpack/pkg/antd.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/components/example/route-demo.js": {
-      "bytes": 637,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/react-router-dom.js",
           "kind": "import-statement"
         }
       ]
@@ -791,7 +795,7 @@
           "bytesInOutput": 6820
         },
         "dist/components/auth-user/login.js": {
-          "bytesInOutput": 115
+          "bytesInOutput": 127
         },
         "dist/components/auth-user/register.js": {
           "bytesInOutput": 118
@@ -874,6 +878,9 @@
         "_snowpack/pkg/react-router-dom.js": {
           "bytesInOutput": 21826
         },
+        "dist/components/example/route-demo.js": {
+          "bytesInOutput": 417
+        },
         "dist/routes.js": {
           "bytesInOutput": 732
         },
@@ -903,9 +910,6 @@
         },
         "dist/components/example/button-demo.js": {
           "bytesInOutput": 505
-        },
-        "dist/components/example/route-demo.js": {
-          "bytesInOutput": 320
         },
         "dist/components/example/typography-demo.js": {
           "bytesInOutput": 1210
@@ -938,7 +942,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 601307
+      "bytes": 601416
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
