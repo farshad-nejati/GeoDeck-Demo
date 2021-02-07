@@ -5,9 +5,8 @@ import RouteDemo from '../example/route-demo';
 const Login = (props) => {
   console.log(props);
   return (
-     <div>
-          <RouteDemo />
-      
+    <div>
+      <RouteDemo />
     </div>
   );
 };
