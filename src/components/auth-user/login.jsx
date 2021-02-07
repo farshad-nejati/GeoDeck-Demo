@@ -3,7 +3,8 @@ import { Avatar, Button, Card, Col, Row, Skeleton } from 'antd';
 import { Link } from 'react-router-dom';
 import Title from 'antd/lib/typography/Title';
 import Meta from 'antd/lib/card/Meta';
-import ModalCustom from '../modal';
+import ModalDemo from '../example/modal';
+import DemoTab from '../example/tabs';
 
 const Login = (props) => {
   console.log(props);
@@ -11,11 +12,12 @@ const Login = (props) => {
     <div
       style={{
         gridGap: '1rem',
-        display: "grid",
+        display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
         justifyItems: 'center',
         justifyContent: 'center',
+        padding: "32px 8px"
       }}
     >
       <p>Login</p>
@@ -46,6 +48,9 @@ const Login = (props) => {
         <Button style={{ margin: '0 4px' }} type="ghost">
           ghost
         </Button>
+        <Button style={{ margin: '0 4px' }} disabled>
+          disable
+        </Button>
         <Button style={{ margin: '0 4px' }} type="default">
           default
         </Button>
@@ -72,18 +77,24 @@ const Login = (props) => {
           </Skeleton>
         </Card>
       </Row>
+
       <Row style={{ padding: '16px 0' }}>
-        <ModalCustom />
+        <ModalDemo />
       </Row>
 
-      <Link to="/register">Register</Link>
-      <br />
-      <Link to="/main/2">Main</Link>
-      <br />
-      <Link to="/gallery">Gallery</Link>
-      <br />
-      <Link to="/project">Project</Link>
-      <br />
+      <div>
+        <DemoTab />        
+      </div>
+
+      <div>
+        <Link to="/register">Register</Link>
+        <br />
+        <Link to="/main/2">Main</Link>
+        <br />
+        <Link to="/gallery">Gallery</Link>
+        <br />
+        <Link to="/project">Project</Link>
+      </div>
     </div>
   );
 };
