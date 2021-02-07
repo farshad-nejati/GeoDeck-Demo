@@ -1,0 +1,18 @@
+.ant-card-bordered {
+  border-color: @component-background;
+}
+
+.ant-card-cover {
+  border-radius: inherit;
+  background-color: @image-bg;
+  #aspect-ratio-parrent();
+  #aspect-ratio-parrent.hd();
+  .retina({
+    #aspect-ratio-parrent.full-hd();
+    });
+
+  img {
+    border-radius: inherit;
+    .aspect-ratio-child();
+  }
+}
