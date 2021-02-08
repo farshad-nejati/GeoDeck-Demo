@@ -1,14 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // redux...
 import { Provider } from 'react-redux';
-import store from './store/store';
+import store from '@redux/store';
 
 // router...
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import routes from './routes';
-import history from './history';
-import Spinner from 'components/spinner';
+import routes from '@app/routes';
+import history from '@app/history';
+import Spinner from '@components/spinner';
 import '@less/main.less';
 // import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 

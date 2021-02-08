@@ -1,11 +1,11 @@
 import React from "react";
 
-const Login = React.lazy(() => import('components/auth-user/login'));
-const Register = React.lazy(() => import('components/auth-user/register'));
-const Main = React.lazy(() => import('components/main-page'));
-const Gallery = React.lazy(() => import('components/gallery-view'));
-const Project = React.lazy(() => import('components/project-page'));
-const Demo = React.lazy(() => import('components/example'));
+const Login = React.lazy(() => import('@pages/login'));
+const Register = React.lazy(() => import('@pages/register'));
+const Main = React.lazy(() => import('@pages/main'));
+const Gallery = React.lazy(() => import('@pages/gallery'));
+const Project = React.lazy(() => import('@pages/project'));
+const Demo = React.lazy(() => import('@pages/demo'));
 
 const routes = [
   { path: '/', exact: true, name:"Login Page", component: Login },

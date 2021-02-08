@@ -27,12 +27,12 @@ module.exports = {
     // "lodash": "lodash-es",
     // Type 2: Local Directory Import Alias (relative to cwd)
     '@app': './src',
-    "components": './src/components',
+    "@pages": './src/pages',
+    "@components": './src/components',
     '@api': './src/api',
     '@redux': './src/store',
-    '@sass': './src/sass',
     '@less': './src/less',
-    '@view': './src/view',
+    '@static': './src/static',
     '@test': './src/test',
   },
 

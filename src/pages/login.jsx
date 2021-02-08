@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RouteDemo from '../example/route-demo';
+import RouteDemo from '@components/demo-components/route-demo';
 
 const Login = (props) => {
   console.log(props);

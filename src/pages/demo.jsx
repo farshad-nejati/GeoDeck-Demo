@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ModalDemo from '../example/modal-demo';
-import DemoTab from '../example/tabs-demo';
-import CardDemo from '../example/card-demo';
-import ButtonDemo from '../example/button-demo';
-import RouteDemo from '../example/route-demo';
-import TypographyDemo from '../example/typography-demo';
-import InputDemo from '../example/input-demo';
 import { Divider } from 'antd';
-import FormDemo from './form-demo';
+import ModalDemo from '@components/demo-components/modal-demo';
+import DemoTab from '@components/demo-components/tabs-demo';
+import CardDemo from '@components/demo-components/card-demo';
+import ButtonDemo from '@components/demo-components/button-demo';
+import RouteDemo from '@components/demo-components/route-demo';
+import TypographyDemo from '@components/demo-components/typography-demo';
+import InputDemo from '@components/demo-components/input-demo';
+import FormDemo from '@components/demo-components/form-demo';
 
 const Demo = (props) => {
   console.log(props);
