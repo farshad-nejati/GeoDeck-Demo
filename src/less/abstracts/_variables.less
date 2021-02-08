@@ -14,39 +14,27 @@
 // @border-color-base: #929292; // major border color
 // @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
 //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
-
 // @font-size-base: 14px;
 // @font-size-lg: @font-size-base + 2px;
 // @font-size-sm: 12px;
 // @border-radius-base: 2px;
+
 @primary-color: #f2ab1f; // primary color for all components
+@heading-color: #d5d5d5; // heading text color -- h1 ... h6
+@text-color: #d5d5d5; // major text color
+@text-color-secondary: #929292; // secondary text color
+@border-color-base: fade(#929292, 25%); // #33333a; major border color
 // // Background color for `<body>`
 @body-background: #000014;
 // // Base background color for most components
 @component-background: #262626;
 
-@heading-color: #d5d5d5; // heading text color -- h1 ... h6
-@text-color: #d5d5d5; // major text color
-@text-color-secondary: #929292; // secondary text color
-@border-color-base: fade(#929292, 25%);; // major border color
-// @border-color-base: #33333a; // major border color
-
-
 // // Disabled states
 @disabled-color: @text-color-secondary;
 @disabled-bg: @text-color;
 
-
-// // Border color
-// @border-color-base: hsv(0, 0, 85%); // base border outline a component
-// @border-color-split: transparent; // split border inside a component
-// @border-color-inverse: @white;
-// @border-width-base: 1px; // width of the border for a component
-// @border-style-base: solid; // style of a components border
-
 // // Image
 @image-bg: #343434;
-// @image-color: #fff;
 
 // LINK
 @link-color: @text-color;
@@ -54,41 +42,28 @@
 @link-active-color: @primary-color;
 
 // Button
-
 @btn-default-color: @text-color;
 @btn-default-bg: transparent;
 @btn-default-border: @text-color;
-
 @btn-primary-color: @black;
 @btn-primary-bg: @primary-color;
-
 
 // Input
 @input-placeholder-color: @text-color-secondary;
 @input-color: @text-color;
 @input-number-hover-border-color: @input-hover-border-color;
-// @input-number-handler-active-bg: @primary-color;
-// @input-number-handler-hover-bg: @primary-5;
-// @input-number-handler-bg: @component-background;
-// @input-number-handler-border-color: @border-color-base;
 @input-addon-bg: @text-color-secondary;
-// @input-hover-border-color: @primary-5;
-// @input-disabled-bg: @disabled-bg;
-// @input-outline-offset: 0 0;
 @input-icon-hover-color: @text-color;
-// @input-disabled-color: @disabled-color;
-
-
 
 // Card
 
 // modal
+// @modal-body-padding: 16px 24px;
 @modal-padding-vertical: 24px; // custom variable
 @modal-padding-horizontal: 24px; // custom variable
 @modal-heading-color: @primary-color;
 @modal-footer-border-width: 0;
 @modal-header-border-width: 0;
-// @modal-body-padding: 16px 24px;
 @modal-footer-padding-vertical: @modal-padding-vertical;
 @modal-footer-padding-horizontal: @modal-padding-horizontal;
 @modal-header-padding-vertical: @modal-padding-vertical;
@@ -99,16 +74,73 @@
 // icon
 @icon-color-hover: @primary-color;
 
-
 // // Divider
-// @divider-text-padding: 1em;
-// @divider-orientation-margin: 5%;
 @divider-color: @text-color;
 
+// all font-size used in antd
 
+// @font-size-base: 14px;
+// @font-size-lg: @font-size-base + 2px;
+// @font-size-sm: 12px;
+// @heading-1-size: ceil(@font-size-base * 2.71);
+// @heading-2-size: ceil(@font-size-base * 2.14);
+// @heading-3-size: ceil(@font-size-base * 1.71);
+// @heading-4-size: ceil(@font-size-base * 1.42);
+// @heading-5-size: ceil(@font-size-base * 1.14);
+// @btn-font-size-lg: @font-size-lg;
+// @btn-font-size-sm: @font-size-base;
+// @btn-square-only-icon-size: @font-size-base + 2px;
+// @btn-square-only-icon-size-sm: @font-size-base;
+// @btn-square-only-icon-size-lg: @btn-font-size-lg + 2px;
+// @empty-font-size: @font-size-base;
+// @dropdown-font-size: @font-size-base;
+// @form-item-label-font-size: @font-size-base;
+//   (round(((@input-height-base - @font-size-base * @line-height-base) / 2) * 10) / 10) -
+//   (round(((@input-height-sm - @font-size-base * @line-height-base) / 2) * 10) / 10) -
+//     ceil(((@input-height-lg - @font-size-lg * @line-height-base) / 2) * 10) / 10
+// @select-dropdown-font-size: @dropdown-font-size;
+// @cascader-dropdown-font-size: @dropdown-font-size;
+// @modal-header-title-font-size: @font-size-lg;
+// @progress-text-font-size: 1em;
+// @progress-circle-text-font-size: 1em;
+// @menu-item-font-size: @font-size-base;
+// @menu-icon-size: @menu-item-font-size;
+// @menu-icon-size-lg: @font-size-lg;
+// @menu-item-group-title-font-size: @menu-item-font-size;
+// @table-font-size: @font-size-base;
+// @table-font-size-md: @table-font-size;
+// @table-font-size-sm: @table-font-size;
+// @tag-font-size: @font-size-sm;
+// @badge-font-size: @font-size-sm;
+// @badge-font-size-sm: @font-size-sm;
+// @card-head-font-size: @font-size-lg;
+// @card-head-font-size-sm: @font-size-base;
+// @comment-font-size-base: @font-size-base;
+// @comment-font-size-sm: @font-size-sm;
+//     (@tabs-card-height - floor(@font-size-base * @line-height-base)) / 2
+// @tabs-title-font-size: @font-size-base;
+// @tabs-title-font-size-lg: @font-size-lg;
+// @tabs-title-font-size-sm: @font-size-base;
+// @avatar-font-size-base: 18px;
+// @avatar-font-size-lg: 24px;
+// @avatar-font-size-sm: 14px;
+// @page-header-tabs-tab-font-size: 16px;
+// @breadcrumb-font-size: @font-size-base;
+// @breadcrumb-icon-font-size: @font-size-base;
+// @alert-icon-top: 8px + @font-size-base * (@line-height-base / 2) - (@font-size-base / 2);
+// @list-item-meta-description-font-size: @font-size-base;
+// @statistic-title-font-size: @font-size-base;
+// @statistic-content-font-size: 24px;
+// @statistic-unit-font-size: 24px;
+// @steps-icon-custom-font-size: 24px;
+// @steps-icon-font-size: @font-size-lg;
+// @result-title-font-size: 24px;
+// @result-subtitle-font-size: @font-size-base;
+// @result-icon-font-size: 72px;
+// @image-font-size-base: 24px;
+// @image-mask-font-size: 16px;
 
-
- // geodeck demo variables ------------------- //
+// geodeck demo variables ------------------- //
 
 // @btn-link-hover-bg: transparent;
 // @btn-text-hover-bg: rgba(0, 0, 0, 0.018);
