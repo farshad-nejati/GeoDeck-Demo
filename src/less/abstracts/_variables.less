@@ -15,7 +15,6 @@
 // @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
 //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
 
-
 @primary-color: #f2ab1f; // primary color for all components
 @heading-color: #d5d5d5; // heading text color -- h1 ... h6
 @text-color: #d5d5d5; // major text color
@@ -27,7 +26,6 @@
 // @component-background: #404040;
 // @component-background: #262626;
 @component-background: #292929;
-
 
 // @background-color-light: hsv(0, 0, 98%); // background of header and selected item
 @background-color-light: @text-color-secondary-fade; // background of header and selected item
@@ -44,13 +42,11 @@
 @item-active-bg: @text-color-secondary-fade;
 @item-hover-bg: @text-color-secondary-fade;
 
-
 // // Border color
 @border-color-base: @text-color-secondary-fade; // #33333a; major border color
 @border-color-split: @text-color-secondary-fade; // split border inside a component
 // @border-color-inverse :red;
 // @border-style-base: solid; // style of a components border
-
 
 // // Image
 @image-bg: #343434;
@@ -94,16 +90,14 @@
 // // Divider
 @divider-color: @text-color;
 
-
 // // Select
 // // ---
 @select-item-selected-color: @primary-color;
 @select-item-selected-bg: @item-active-bg;
 @select-selection-item-bg: @background-color-light;
-@select-multiple-disabled-background:  @text-color-secondary-fade;
+@select-multiple-disabled-background: @text-color-secondary-fade;
 @select-multiple-item-disabled-color: @text-color-secondary;
-@select-multiple-item-disabled-border-color:  @text-color-secondary-fade;
-
+@select-multiple-item-disabled-border-color: @text-color-secondary-fade;
 
 // // Table
 @table-bg: transparent;
@@ -122,14 +116,26 @@
 @tooltip-color: @white;
 @tooltip-bg: @text-color-secondary;
 
-
-// // Checkbox
-// @checkbox-color: @primary-color;
-// @checkbox-check-color: #fff;
-// @checkbox-check-bg: @checkbox-check-color;
-// @checkbox-border-width: @border-width-base;
-// @checkbox-group-item-margin-right: 8px;
-
-
+// // Layout
+@layout-body-background: @body-background;
+@layout-header-background: #1b3062;
+@layout-header-height: 55px;
+@layout-header-padding: 0;
+@layout-footer-padding: @layout-footer-padding-vertical @layout-footer-padding-horizontal;
+@layout-footer-background: @layout-header-background;
+@layout-sider-background: @component-background;
+// @layout-trigger-height: 48px;
+// @layout-trigger-background: #002140;
+// @layout-trigger-color: #fff;
+// @layout-zero-trigger-width: 36px;
+// @layout-zero-trigger-height: 42px;
+// // Layout light theme
+// @layout-sider-background-light: #fff;
+// @layout-trigger-background-light: #fff;
+// @layout-trigger-color-light: @text-color;
 
 // user defiend variables
+@footer-font-size: @font-size-base - 2;
+@layout-footer-height: 28px;
+@layout-footer-padding-vertical: 4px;
+@layout-footer-padding-horizontal: 4px;
