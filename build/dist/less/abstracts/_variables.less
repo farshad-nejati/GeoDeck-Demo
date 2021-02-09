@@ -15,38 +15,42 @@
 // @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
 //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
 
-// @font-size-base: 14px;
-// @font-size-lg: @font-size-base + 2px;
-// @font-size-sm: 12px;
-// @border-radius-base: 2px;
+
 @primary-color: #f2ab1f; // primary color for all components
+@heading-color: #d5d5d5; // heading text color -- h1 ... h6
+@text-color: #d5d5d5; // major text color
+@text-color-secondary: #929292; // secondary text color
+@text-color-secondary-fade: fade(@text-color-secondary, 25%); // custom variable
 // // Background color for `<body>`
 @body-background: #000014;
 // // Base background color for most components
 @component-background: #262626;
 
-@heading-color: #d5d5d5; // heading text color -- h1 ... h6
-@text-color: #d5d5d5; // major text color
-@text-color-secondary: #929292; // secondary text color
-@border-color-base: fade(#929292, 25%);; // major border color
-// @border-color-base: #33333a; // major border color
-
+// @background-color-light: hsv(0, 0, 98%); // background of header and selected item
+@background-color-light: @text-color-secondary-fade; // background of header and selected item
+@background-color-base: @text-color-secondary; // Default grey background color
 
 // // Disabled states
 @disabled-color: @text-color-secondary;
 @disabled-bg: @text-color;
 
+// // The background colors for active and hover states for things like
+// // list items or table cells.
+// @item-active-bg: @primary-color;
+// @item-hover-bg: @text-color-secondary-fade;
+@item-active-bg: @text-color-secondary-fade;
+@item-hover-bg: @text-color-secondary-fade;
+
 
 // // Border color
-// @border-color-base: hsv(0, 0, 85%); // base border outline a component
-// @border-color-split: transparent; // split border inside a component
-// @border-color-inverse: @white;
-// @border-width-base: 1px; // width of the border for a component
+@border-color-base: @text-color-secondary-fade; // #33333a; major border color
+@border-color-split: @text-color-secondary-fade; // split border inside a component
+// @border-color-inverse :red;
 // @border-style-base: solid; // style of a components border
+
 
 // // Image
 @image-bg: #343434;
-// @image-color: #fff;
 
 // LINK
 @link-color: @text-color;
@@ -54,76 +58,67 @@
 @link-active-color: @primary-color;
 
 // Button
-
 @btn-default-color: @text-color;
 @btn-default-bg: transparent;
-@btn-default-border: @text-color;
-
+@btn-default-border: @text-color-secondary;
 @btn-primary-color: @black;
 @btn-primary-bg: @primary-color;
-
 
 // Input
 @input-placeholder-color: @text-color-secondary;
 @input-color: @text-color;
 @input-number-hover-border-color: @input-hover-border-color;
-// @input-number-handler-active-bg: @primary-color;
-// @input-number-handler-hover-bg: @primary-5;
-// @input-number-handler-bg: @component-background;
-// @input-number-handler-border-color: @border-color-base;
 @input-addon-bg: @text-color-secondary;
-// @input-hover-border-color: @primary-5;
-// @input-disabled-bg: @disabled-bg;
-// @input-outline-offset: 0 0;
 @input-icon-hover-color: @text-color;
-// @input-disabled-color: @disabled-color;
-
-
 
 // Card
 
 // modal
+// @modal-body-padding: 16px 24px;
 @modal-padding-vertical: 24px; // custom variable
 @modal-padding-horizontal: 24px; // custom variable
 @modal-heading-color: @primary-color;
 @modal-footer-border-width: 0;
 @modal-header-border-width: 0;
-// @modal-body-padding: 16px 24px;
 @modal-footer-padding-vertical: @modal-padding-vertical;
 @modal-footer-padding-horizontal: @modal-padding-horizontal;
 @modal-header-padding-vertical: @modal-padding-vertical;
 @modal-header-padding-horizontal: @modal-padding-horizontal;
 
-// user defiend variables
-
 // icon
 @icon-color-hover: @primary-color;
 
-
 // // Divider
-// @divider-text-padding: 1em;
-// @divider-orientation-margin: 5%;
 @divider-color: @text-color;
 
 
+// // Select
+// // ---
+@select-item-selected-color: @primary-color;
+@select-item-selected-bg: @item-active-bg;
+@select-selection-item-bg: @background-color-light;
+@select-multiple-disabled-background:  @text-color-secondary-fade;
+@select-multiple-item-disabled-color: @text-color-secondary;
+@select-multiple-item-disabled-border-color:  @text-color-secondary-fade;
 
 
- // geodeck demo variables ------------------- //
+// // Table
+@table-bg: transparent;
+@table-header-bg: transparent;
+@table-header-color: @heading-color;
+@table-header-sort-bg: transparent;
+@table-body-sort-bg: @background-color-light;
+@table-selected-row-bg: @background-color-light;
+@table-expanded-row-bg: transparent;
+@table-border-color: @border-color-split;
 
-// @btn-link-hover-bg: transparent;
-// @btn-text-hover-bg: rgba(0, 0, 0, 0.018);
+// // Tooltip
+// @tooltip-max-width: 250px;
+// @tooltip-color: @black;
+// @tooltip-bg: @primary-color;
+@tooltip-color: @white;
+@tooltip-bg: @text-color-secondary;
 
-// text colors
-// @active-gray:#d5d5d5;
-// @inactive-gray:#929292;
-// @color-primary: #F2AB1f;
-// @color-black: #000;
 
-// // navigation-colors
-// @nav-background: #1B3062;
 
-// // top bar
-// @topber-height: 55px;
-// @toolbar-width: 55px;
-// @footer-height: 32px;
-// @padding-container: @topber-height + @footer-height;
+// user defiend variables
