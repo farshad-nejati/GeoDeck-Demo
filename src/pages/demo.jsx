@@ -11,6 +11,7 @@ import InputDemo from '@components/demo-components/input-demo';
 import FormDemo from '@components/demo-components/form-demo';
 import SelectDemo from '../components/demo-components/select-demo';
 import TableDemo from '../components/demo-components/table-demo';
+import DropDownDemo from '../components/demo-components/dropdown-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -89,6 +90,12 @@ const Demo = (props) => {
         </div>
       </div>
       
+      <div style={{ width: '100%' }}>
+        <Divider>DropDownDemo Demo</Divider>
+        <div>
+          <DropDownDemo />
+        </div>
+      </div>
       <div style={{ width: '100%', gridColumn: '1 / -1' }}>
         <Divider>Table Demo</Divider>
         <div>
