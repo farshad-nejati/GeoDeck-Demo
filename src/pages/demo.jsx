@@ -9,6 +9,7 @@ import RouteDemo from '@components/demo-components/route-demo';
 import TypographyDemo from '@components/demo-components/typography-demo';
 import InputDemo from '@components/demo-components/input-demo';
 import FormDemo from '@components/demo-components/form-demo';
+import SelectDemo from '../components/demo-components/select-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -63,6 +64,13 @@ const Demo = (props) => {
         <Divider>Card Demo</Divider>
         <div>
           <CardDemo />
+        </div>
+      </div>
+
+      <div style={{width: "100%"}}>
+        <Divider>Select Demo</Divider>
+        <div>
+          <SelectDemo />
         </div>
       </div>
 

@@ -20,15 +20,33 @@
 @heading-color: #d5d5d5; // heading text color -- h1 ... h6
 @text-color: #d5d5d5; // major text color
 @text-color-secondary: #929292; // secondary text color
-@border-color-base: fade(#929292, 25%); // #33333a; major border color
+@text-color-secondary-fade: fade(@text-color-secondary, 25%); // custom variable
 // // Background color for `<body>`
 @body-background: #000014;
 // // Base background color for most components
 @component-background: #262626;
 
+// @background-color-light: hsv(0, 0, 98%); // background of header and selected item
+@background-color-base: @text-color-secondary-fade; // Default grey background color
+
 // // Disabled states
 @disabled-color: @text-color-secondary;
 @disabled-bg: @text-color;
+
+// // The background colors for active and hover states for things like
+// // list items or table cells.
+// @item-active-bg: @primary-color;
+// @item-hover-bg: @text-color-secondary-fade;
+@item-active-bg: @primary-color;
+@item-hover-bg: @text-color-secondary-fade;
+
+
+// // Border color
+@border-color-base: @text-color-secondary-fade; // #33333a; major border color
+@border-color-split: @text-color-secondary-fade; // split border inside a component
+// @border-color-inverse :red;
+// @border-style-base: solid; // style of a components border
+
 
 // // Image
 @image-bg: #343434;
@@ -66,10 +84,20 @@
 @modal-header-padding-vertical: @modal-padding-vertical;
 @modal-header-padding-horizontal: @modal-padding-horizontal;
 
-// user defiend variables
-
 // icon
 @icon-color-hover: @primary-color;
 
 // // Divider
 @divider-color: @text-color;
+
+
+// // Select
+// // ---
+@select-item-selected-color: @primary-color;
+@select-item-selected-bg: @text-color-secondary-fade;
+@select-multiple-disabled-background:  @text-color-secondary-fade;
+@select-multiple-item-disabled-color: @text-color-secondary;
+@select-multiple-item-disabled-border-color:  @text-color-secondary-fade;
+
+
+// user defiend variables
