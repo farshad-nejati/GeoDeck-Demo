@@ -12,6 +12,8 @@ import FormDemo from '@components/demo-components/form-demo';
 import SelectDemo from '../components/demo-components/select-demo';
 import TableDemo from '../components/demo-components/table-demo';
 import DropDownDemo from '../components/demo-components/dropdown-demo';
+import PopoverDemo from '../components/demo-components/popover-demo';
+import TooltipDemo from '../components/demo-components/tooltop-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -89,11 +91,21 @@ const Demo = (props) => {
           <TypographyDemo />
         </div>
       </div>
-      
+
       <div style={{ width: '100%' }}>
-        <Divider>DropDownDemo Demo</Divider>
+        <Divider>DropDown Demo</Divider>
         <div>
           <DropDownDemo />
+        </div>
+        <br />
+        <Divider>Popover Demo</Divider>
+        <div>
+          <PopoverDemo />
+        </div>
+        <br />
+        <Divider>Tooltip Demo</Divider>
+        <div>
+          <TooltipDemo />
         </div>
       </div>
       <div style={{ width: '100%', gridColumn: '1 / -1' }}>
