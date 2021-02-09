@@ -1,0 +1,14 @@
+.ant-checkbox {
+  &-checked &-inner {
+    &::after {
+      border-color: @black;
+    }
+  }
+  &-indeterminate &-inner {
+    background-color: @primary-color;
+    // background-color: @white;
+    &::after {
+      background-color: @black;
+    }
+  }
+}
