@@ -1,3 +1,32 @@
+
+html {
+  // This defines what 1rem is
+  // 16px : defined in body tag in _typography.less
+  font-size: 50%; // 1rem=8px 8px/16px
+
+  #breakpoints.sm({
+    font-size: 62.5%;; //1rem=10px  10px/16=.625
+  });
+
+  #breakpoints.md({
+    font-size: 75%; //1rem=12px  12px/16=.75
+  });
+
+
+  #breakpoints.lg({
+    font-size: 87.5%; //1rem=14px  14px/16=.875
+  });
+
+  #breakpoints.xl({
+    font-size: 100%; //1rem=16px  16px/16=1
+  });
+  
+  #breakpoints.xxl({
+    font-size: 112.5%; //1rem=18px  18px/16=.1.125
+  });
+
+}
+
 * {
   box-sizing: inherit;
   &::-webkit-scrollbar {
