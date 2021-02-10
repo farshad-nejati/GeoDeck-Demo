@@ -9,7 +9,7 @@ const LayoutApp = ({ children }) => {
     <Layout>
       <Header className="header">header</Header>
       <Content className="content">{children}</Content>
-      <Footer className="footer">
+      <Footer className="footer text__small">
         <Text>
           &#169; 2021 - Powered by{' '}
           <span className="footer__powered-by">Petrolern LLC</span>
