@@ -19,13 +19,13 @@ const CardDemo = () => (
           avatar={
             <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
           }
-          title="Card title"
+          title="Card defalut"
           description="This is the description"
         />
       </Skeleton>
     </Card>
     <Card
-      className="card__gallery"
+      className="card__project"
       bordered={false}
       style={{ width: 300, marginTop: 16 }}
       cover={
@@ -35,7 +35,7 @@ const CardDemo = () => (
         />
       }
     >
-      <Meta title="Card title" description="This is the description" />
+      <Meta title="Card project" description="card used in project page" />
     </Card>
   </>
 );
