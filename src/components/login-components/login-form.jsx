@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Form, Input, Button, Checkbox, Divider, Image } from 'antd';
 import { UserOutlined, LockFilled } from '@ant-design/icons';
 
 const LoginForm = (props) => {
   console.log(props);
-  const { history } = props;
+  const history = useHistory();
 
   const onFinish = (values) => {
     console.log('Success:', values);

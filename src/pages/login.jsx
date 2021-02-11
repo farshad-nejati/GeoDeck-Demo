@@ -28,7 +28,7 @@ const Login = ({...other}) => {
     <div className="login">
       <Card className="login__layout card__login" bordered={false}>
         {renderLoginHeader()}
-        <LoginForm {...other} />
+        <LoginForm />
       </Card>
     </div>
   );
