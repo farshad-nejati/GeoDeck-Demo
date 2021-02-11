@@ -112,7 +112,7 @@
       ]
     },
     "_snowpack/pkg/react-router-dom.js": {
-      "bytes": 67570,
+      "bytes": 67663,
       "imports": [
         {
           "path": "_snowpack/pkg/common/setPrototypeOf-adc775f4.js",
@@ -262,72 +262,6 @@
         }
       ]
     },
-    "dist/components/demo-components/route-demo.js": {
-      "bytes": 774,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/react-router-dom.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/login.js": {
-      "bytes": 368,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/react-router-dom.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/components/demo-components/route-demo.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/register.js": {
-      "bytes": 206,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/main.js": {
-      "bytes": 194,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/gallery.js": {
-      "bytes": 203,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/project.js": {
-      "bytes": 203,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/react.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
     "_snowpack/pkg/common/index-83feb445.js": {
       "bytes": 47943,
       "imports": [
@@ -388,7 +322,7 @@
       ]
     },
     "_snowpack/pkg/antd.js": {
-      "bytes": 1080773,
+      "bytes": 1178478,
       "imports": [
         {
           "path": "_snowpack/pkg/common/index-57a74e37.js",
@@ -407,15 +341,15 @@
           "kind": "import-statement"
         },
         {
-          "path": "_snowpack/pkg/common/index-8dbeb7e4.js",
-          "kind": "import-statement"
-        },
-        {
           "path": "_snowpack/pkg/common/extends-7477639a.js",
           "kind": "import-statement"
         },
         {
           "path": "_snowpack/pkg/common/hoist-non-react-statics.cjs-0d803417.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-8dbeb7e4.js",
           "kind": "import-statement"
         },
         {
@@ -432,6 +366,214 @@
         },
         {
           "path": "_snowpack/pkg/common/setPrototypeOf-adc775f4.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/@ant-design/icons.js": {
+      "bytes": 3373,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-57a74e37.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/DownOutlined-57a2b2bb.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/DownOutlined-57a2b2bb.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-8c19dec8.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-83feb445.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/objectWithoutPropertiesLoose-d5128f55.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/login-form.js": {
+      "bytes": 3727,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@ant-design/icons.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/auth-header.js": {
+      "bytes": 838,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/auth-card.js": {
+      "bytes": 487,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/auth-header.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/login.js": {
+      "bytes": 391,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/login-form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/auth-card.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/register-form.js": {
+      "bytes": 2567,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@ant-design/icons.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/register.js": {
+      "bytes": 395,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/auth-card.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/register-form.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/reset-assword-form.js": {
+      "bytes": 1814,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@ant-design/icons.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/reset-password.js": {
+      "bytes": 1368,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/auth-card.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/reset-assword-form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/main.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/gallery.js": {
+      "bytes": 203,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/project.js": {
+      "bytes": 233,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
           "kind": "import-statement"
         }
       ]
@@ -504,7 +646,7 @@
       ]
     },
     "dist/components/demo-components/card-demo.js": {
-      "bytes": 860,
+      "bytes": 1321,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -533,6 +675,19 @@
         }
       ]
     },
+    "dist/components/demo-components/route-demo.js": {
+      "bytes": 919,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/components/demo-components/typography-demo.js": {
       "bytes": 1968,
       "imports": [
@@ -542,35 +697,6 @@
         },
         {
           "path": "_snowpack/pkg/antd.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "_snowpack/pkg/@ant-design/icons.js": {
-      "bytes": 2883,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/common/DownOutlined-57a2b2bb.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/DownOutlined-57a2b2bb.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/index-57a74e37.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/index-83feb445.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/objectWithoutPropertiesLoose-d5128f55.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/common/_commonjsHelpers-8c19dec8.js",
           "kind": "import-statement"
         }
       ]
@@ -593,7 +719,7 @@
       ]
     },
     "dist/components/demo-components/form-demo.js": {
-      "bytes": 2027,
+      "bytes": 2476,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -867,7 +993,7 @@
       ]
     },
     "dist/routes.js": {
-      "bytes": 999,
+      "bytes": 1197,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -879,6 +1005,10 @@
         },
         {
           "path": "dist/pages/register.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/pages/reset-password.js",
           "kind": "dynamic-import"
         },
         {
@@ -927,11 +1057,24 @@
       ]
     },
     "dist/less/main.css": {
-      "bytes": 608494,
+      "bytes": 610954,
       "imports": []
     },
+    "dist/components/layout-app/index.js": {
+      "bytes": 761,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/App.js": {
-      "bytes": 904,
+      "bytes": 1207,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -963,6 +1106,10 @@
         },
         {
           "path": "dist/less/main.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/layout-app/index.js",
           "kind": "import-statement"
         }
       ]
@@ -1007,10 +1154,13 @@
           "bytesInOutput": 6820
         },
         "dist/pages/login.js": {
-          "bytesInOutput": 127
+          "bytesInOutput": 141
         },
         "dist/pages/register.js": {
-          "bytesInOutput": 118
+          "bytesInOutput": 130
+        },
+        "dist/pages/reset-password.js": {
+          "bytesInOutput": 586
         },
         "dist/pages/main.js": {
           "bytesInOutput": 114
@@ -1019,7 +1169,7 @@
           "bytesInOutput": 117
         },
         "dist/pages/project.js": {
-          "bytesInOutput": 117
+          "bytesInOutput": 137
         },
         "dist/pages/demo.js": {
           "bytesInOutput": 2006
@@ -1037,7 +1187,7 @@
           "bytesInOutput": 61
         },
         "_snowpack/pkg/common/index-8dbeb7e4.js": {
-          "bytesInOutput": 124213
+          "bytesInOutput": 124207
         },
         "_snowpack/pkg/react-dom.js": {
           "bytesInOutput": 0
@@ -1061,7 +1211,7 @@
           "bytesInOutput": 977
         },
         "_snowpack/pkg/react-router-dom.js": {
-          "bytesInOutput": 21826
+          "bytesInOutput": 21854
         },
         "_snowpack/pkg/react-redux.js": {
           "bytesInOutput": 1822
@@ -1090,23 +1240,38 @@
         "dist/store/store.js": {
           "bytesInOutput": 44
         },
-        "dist/components/demo-components/route-demo.js": {
-          "bytesInOutput": 417
-        },
-        "dist/routes.js": {
-          "bytesInOutput": 732
-        },
         "_snowpack/pkg/common/index-83feb445.js": {
-          "bytesInOutput": 19113
+          "bytesInOutput": 19115
         },
         "_snowpack/pkg/common/Notification-8f728f2c.js": {
-          "bytesInOutput": 68463
+          "bytesInOutput": 68477
         },
         "_snowpack/pkg/common/DownOutlined-57a2b2bb.js": {
           "bytesInOutput": 4255
         },
         "_snowpack/pkg/antd.js": {
-          "bytesInOutput": 427581
+          "bytesInOutput": 491973
+        },
+        "_snowpack/pkg/@ant-design/icons.js": {
+          "bytesInOutput": 2027
+        },
+        "dist/components/auth-components/login-form.js": {
+          "bytesInOutput": 1996
+        },
+        "dist/components/auth-components/auth-header.js": {
+          "bytesInOutput": 473
+        },
+        "dist/components/auth-components/auth-card.js": {
+          "bytesInOutput": 179
+        },
+        "dist/routes.js": {
+          "bytesInOutput": 864
+        },
+        "dist/components/auth-components/register-form.js": {
+          "bytesInOutput": 1261
+        },
+        "dist/components/auth-components/reset-assword-form.js": {
+          "bytesInOutput": 850
         },
         "dist/components/demo-components/modal-demo.js": {
           "bytesInOutput": 710
@@ -1115,25 +1280,25 @@
           "bytesInOutput": 304
         },
         "_snowpack/pkg/antd/lib/card/Meta.js": {
-          "bytesInOutput": 53040
+          "bytesInOutput": 53037
         },
         "dist/components/demo-components/card-demo.js": {
-          "bytesInOutput": 424
+          "bytesInOutput": 743
         },
         "dist/components/demo-components/button-demo.js": {
           "bytesInOutput": 505
         },
+        "dist/components/demo-components/route-demo.js": {
+          "bytesInOutput": 527
+        },
         "dist/components/demo-components/typography-demo.js": {
           "bytesInOutput": 1210
-        },
-        "_snowpack/pkg/@ant-design/icons.js": {
-          "bytesInOutput": 1854
         },
         "dist/components/demo-components/input-demo.js": {
           "bytesInOutput": 1270
         },
         "dist/components/demo-components/form-demo.js": {
-          "bytesInOutput": 1007
+          "bytesInOutput": 1250
         },
         "dist/components/demo-components/select-remote.js": {
           "bytesInOutput": 932
@@ -1183,23 +1348,26 @@
         "dist/less/main.css": {
           "bytesInOutput": 0
         },
+        "dist/components/layout-app/index.js": {
+          "bytesInOutput": 376
+        },
         "dist/App.js": {
-          "bytesInOutput": 295
+          "bytesInOutput": 431
         },
         "dist/index.js": {
           "bytesInOutput": 122
         }
       },
-      "bytes": 768269
+      "bytes": 839576
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/less/main.css": {
-          "bytesInOutput": 518112
+          "bytesInOutput": 519776
         }
       },
-      "bytes": 518113
+      "bytes": 519777
     }
   }
 }

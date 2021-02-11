@@ -24833,3 +24833,8 @@ div.ant-typography-edit-content.ant-typography-rtl {
   margin: 8px 0 0;
   padding: 0;
 }
+/**
+ * Import antd variables to project.
+ * All commented variables,used for reference to andt default variables.
+ * To maintain the code structure, change this variables in "../abstracts/_variables.less" 
+ */

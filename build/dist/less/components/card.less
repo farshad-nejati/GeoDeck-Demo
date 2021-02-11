@@ -1,22 +1,29 @@
 .ant-card {
-  border-radius: @border-radius-base * 8;
-}
-
-.ant-card-bordered {
-  border-color: @component-background;
-}
-
-.ant-card-cover {
-  border-radius: inherit;
-  background-color: @image-bg;
-  #aspect-ratio-parrent();
-  #aspect-ratio-parrent.hd();
-  .retina({
-    #aspect-ratio-parrent.full-hd();
-    });
-
-  img {
+  &-bordered {
+    border-color: @component-background;
+  }
+  &-cover {
     border-radius: inherit;
-    .aspect-ratio-child();
+    background-color: @image-bg;
+    #aspect-ratio-parrent();
+    #aspect-ratio-parrent.hd();
+    .retina({
+      #aspect-ratio-parrent.full-hd();
+      });
+
+    img {
+      border-radius: inherit;
+      .aspect-ratio-child();
+    }
+  }
+}
+
+.card {
+  &__project {
+    border-radius: @border-radius-base * 8;
+  }
+
+  &__auth {
+    border-radius: 0;
   }
 }

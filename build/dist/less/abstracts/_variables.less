@@ -1,4 +1,10 @@
-// overwite antd variables
+/**
+ * Define all vriables in project.
+ * In first section, we override antd variables
+ * In Second section, we define custom variables 
+ */
+
+// ------- First Section - Override antd variables ---------- //
 
 // @primary-color: #F2AB1f; // primary color for all components
 // @link-color: #1890ff; // link color
@@ -15,17 +21,23 @@
 // @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
 //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
 
-
 @primary-color: #f2ab1f; // primary color for all components
 @heading-color: #d5d5d5; // heading text color -- h1 ... h6
 @text-color: #d5d5d5; // major text color
 @text-color-secondary: #929292; // secondary text color
-@text-color-secondary-fade: fade(@text-color-secondary, 25%); // custom variable
 // // Background color for `<body>`
 @body-background: #000014;
 // // Base background color for most components
-@component-background: #404040;
+// @component-background: #404040;
 // @component-background: #262626;
+@component-background: #292929;
+
+
+// // Typography
+// // ---
+@typography-title-font-weight: 400;
+// @typography-title-margin-top: 1.2em;
+// @typography-title-margin-bottom: 0.5em;
 
 
 // @background-color-light: hsv(0, 0, 98%); // background of header and selected item
@@ -43,13 +55,11 @@
 @item-active-bg: @text-color-secondary-fade;
 @item-hover-bg: @text-color-secondary-fade;
 
-
 // // Border color
 @border-color-base: @text-color-secondary-fade; // #33333a; major border color
 @border-color-split: @text-color-secondary-fade; // split border inside a component
 // @border-color-inverse :red;
 // @border-style-base: solid; // style of a components border
-
 
 // // Image
 @image-bg: #343434;
@@ -70,15 +80,13 @@
 @input-placeholder-color: @text-color-secondary;
 @input-color: @text-color;
 @input-number-hover-border-color: @input-hover-border-color;
-@input-addon-bg: @text-color-secondary;
+@input-addon-bg: @text-color-secondary-fade;
 @input-icon-hover-color: @text-color;
 
 // Card
 
 // modal
 // @modal-body-padding: 16px 24px;
-@modal-padding-vertical: 24px; // custom variable
-@modal-padding-horizontal: 24px; // custom variable
 @modal-heading-color: @primary-color;
 @modal-footer-border-width: 0;
 @modal-header-border-width: 0;
@@ -93,16 +101,13 @@
 // // Divider
 @divider-color: @text-color;
 
-
 // // Select
-// // ---
 @select-item-selected-color: @primary-color;
 @select-item-selected-bg: @item-active-bg;
 @select-selection-item-bg: @background-color-light;
-@select-multiple-disabled-background:  @text-color-secondary-fade;
+@select-multiple-disabled-background: @text-color-secondary-fade;
 @select-multiple-item-disabled-color: @text-color-secondary;
-@select-multiple-item-disabled-border-color:  @text-color-secondary-fade;
-
+@select-multiple-item-disabled-border-color: @text-color-secondary-fade;
 
 // // Table
 @table-bg: transparent;
@@ -121,6 +126,26 @@
 @tooltip-color: @white;
 @tooltip-bg: @text-color-secondary;
 
+// // Layout
+@layout-body-background: @body-background;
+@layout-header-background: #1b3062;
+@layout-header-height: 6vh;
+@layout-header-padding: 0;
+@layout-footer-padding: @layout-footer-padding-vertical @layout-footer-padding-horizontal;
+@layout-footer-background: @layout-header-background;
+@layout-sider-background: @component-background;
 
 
-// user defiend variables
+
+// ------- Second Section - User defined variables ---------- //
+// Text colors
+@text-color-secondary-fade: fade(@text-color-secondary, 25%);
+
+// modal
+@modal-padding-vertical: 24px;
+@modal-padding-horizontal: 24px;
+
+// layout
+@layout-footer-height: 3vh;
+@layout-footer-padding-vertical: 4px;
+@layout-footer-padding-horizontal: 4px;
