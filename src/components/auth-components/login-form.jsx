@@ -40,7 +40,7 @@ const LoginForm = (props) => {
   return (
     <Form
       layout="vertical"
-      name="basic"
+      name="login-form"
       initialValues={{
         remember: true,
       }}
@@ -82,7 +82,7 @@ const LoginForm = (props) => {
       </Form.Item>
 
       <Form.Item>
-        <Input.Group className="login__grid--two">
+        <Input.Group className="auth__grid--two">
           <Form.Item
             name="remember"
             className="margin-0"
@@ -100,7 +100,7 @@ const LoginForm = (props) => {
       </Form.Item>
 
       <Form.Item>
-        <Input.Group className="login__grid--two">
+        <Input.Group className="auth__grid--two">
           <Form.Item className="margin-0">
             <Button block type="primary" htmlType="submit">
               Sign In
