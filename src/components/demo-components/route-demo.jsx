@@ -7,6 +7,10 @@ const RouteDemo = () => (
       demo
     </Link>
     &nbsp;- &nbsp;
+    <Link style={{ padding: '8px' }} to="/login">
+      login
+    </Link>
+    &nbsp;- &nbsp;
     <Link style={{ padding: '8px' }} to="/register">
       Register
     </Link>

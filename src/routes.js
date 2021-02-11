@@ -8,7 +8,7 @@ const Project = React.lazy(() => import('@pages/project'));
 const Demo = React.lazy(() => import('@pages/demo'));
 
 export const routes = [
-  { path: '/', exact: true, name:"Login Page", component: Login },
+  { path: '/', exact: true, name:"Demo Page", component: Demo },
   { path: '/login', exact: true, name:"Login Page", component: Login },
   { path: '/register', exact: true, name:"Register Page", component: Register },
   { path: '/demo', exact: true, name:"demo Page", component: Demo },
