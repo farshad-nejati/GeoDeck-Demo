@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import FormDemo from '@components/demo-components/form-demo';
 import { Card } from 'antd';
 import { Typography } from 'antd';
+import LoginForm from '../components/login-components/login-form';
 
 const { Title, Text } = Typography;
 
-const Login = (props) => {
+const Login = ({...other}) => {
   const renderLoginHeader = () => (
     <div className="login__header">
       <img
@@ -29,7 +28,7 @@ const Login = (props) => {
     <div className="login">
       <Card className="login__layout card__login" bordered={false}>
         {renderLoginHeader()}
-        <FormDemo />
+        <LoginForm {...other} />
       </Card>
     </div>
   );

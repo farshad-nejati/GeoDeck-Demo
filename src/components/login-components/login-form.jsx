@@ -1,33 +1,15 @@
 import React from 'react';
-import {
-  Form,
-  Input,
-  Button,
-  Checkbox,
-} from 'antd';
+import { Link } from 'react-router-dom';
+import { Form, Input, Button, Checkbox, Divider, Image } from 'antd';
 import { UserOutlined, LockFilled } from '@ant-design/icons';
 
-const layout = {
-  // labelCol: {
-  //   span: 8,
-  // },
-  // wrapperCol: {
-  //   span: 16,
-  // },
-};
-const tailLayout = {
-  // wrapperCol: {
-  //   offset: 8,
-  //   span: 16,
-  // },
-};
-
-const FormDemo = (props) => {
+const LoginForm = (props) => {
   console.log(props);
   const { history } = props;
 
   const onFinish = (values) => {
     console.log('Success:', values);
+    history.push('/projects');
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -57,7 +39,6 @@ const FormDemo = (props) => {
 
   return (
     <Form
-      {...layout}
       layout="vertical"
       name="basic"
       initialValues={{
@@ -81,7 +62,6 @@ const FormDemo = (props) => {
           <Input
             placeholder="Username"
             addonBefore={<UserOutlined />}
-
             // prefix={<UserOutlined className="site-form-item-icon" />}
           />
         </Form.Item>
@@ -102,22 +82,51 @@ const FormDemo = (props) => {
       </Form.Item>
 
       <Form.Item>
-        <Form.Item
-          name="remember"
-          // noStyle
-          valuePropName="checked"
-        >
-          <Checkbox>Remember me</Checkbox>
-        </Form.Item>
+        <Input.Group className="login__grid--two">
+          <Form.Item
+            name="remember"
+            className="margin-0"
+            // noStyle
+            valuePropName="checked"
+          >
+            <Checkbox>Remember me</Checkbox>
+          </Form.Item>
+          <div style={{ textAlign: 'end' }}>
+            <Link to="/reset-password" className="selected text__small">
+              Forget Password
+            </Link>
+          </div>
+        </Input.Group>
       </Form.Item>
 
+      <Form.Item>
+        <Input.Group className="login__grid--two">
+          <Form.Item className="margin-0">
+            <Button block type="primary" htmlType="submit">
+              Sign In
+            </Button>
+          </Form.Item>
+          <Form.Item className="margin-0">
+            <Button block type="default">
+              <Link to="/register">Create ccount</Link>
+            </Button>
+          </Form.Item>
+        </Input.Group>
+      </Form.Item>
+      <Form.Item>
+        <Divider plain className="margin-0">
+          Product of
+        </Divider>
+      </Form.Item>
       <Form.Item className="margin-0">
-        <Button type="primary" htmlType="submit">
-          Sign In
-        </Button>
+        <Image
+          className="image"
+          preview={false}
+          src="https://www.petrolern.com/wp-content/uploads/2018/09/PETROLERN-logo-PNG-HQ-1.png"
+        />
       </Form.Item>
     </Form>
   );
 };
 
-export default FormDemo;
+export default LoginForm;

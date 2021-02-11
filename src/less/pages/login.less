@@ -4,7 +4,14 @@
 
   &__layout {
     margin: auto;
-    padding: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    #breakpoints.sm({
+      max-width: 40rem;
+    });
+    #breakpoints.lg({
+      max-width: 36rem;
+    });
   }
 
   &__header {
@@ -22,6 +29,15 @@
     }
 
     &__subtitle {
+    }
+  }
+
+  &__grid {
+    &--two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      grid-gap: 0.5rem;
     }
   }
 }
