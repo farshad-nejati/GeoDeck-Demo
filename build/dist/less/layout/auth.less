@@ -1,0 +1,26 @@
+.auth {
+  display: grid;
+  min-height: 100vh;
+
+  &__card {
+    margin: auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    #breakpoints.sm({
+        max-width: 40rem;
+      });
+    #breakpoints.lg({
+        max-width: 36rem;
+      });
+  }
+
+  &__result {
+    &.ant-result {
+      padding: 0;
+    }
+    .ant-result-icon {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

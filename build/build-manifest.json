@@ -400,7 +400,7 @@
       ]
     },
     "dist/components/auth-components/login-form.js": {
-      "bytes": 3727,
+      "bytes": 3715,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -421,7 +421,7 @@
       ]
     },
     "dist/components/auth-components/auth-header.js": {
-      "bytes": 838,
+      "bytes": 840,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -434,7 +434,7 @@
       ]
     },
     "dist/components/auth-components/auth-card.js": {
-      "bytes": 487,
+      "bytes": 485,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -505,8 +505,8 @@
         }
       ]
     },
-    "dist/components/auth-components/reset-assword-form.js": {
-      "bytes": 1814,
+    "dist/components/auth-components/reset-password-form.js": {
+      "bytes": 2394,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -527,7 +527,7 @@
       ]
     },
     "dist/pages/reset-password.js": {
-      "bytes": 1368,
+      "bytes": 1379,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -538,7 +538,53 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/auth-components/reset-assword-form.js",
+          "path": "dist/components/auth-components/reset-password-form.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/auth-components/forget-password-form.js": {
+      "bytes": 1826,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-router-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@ant-design/icons.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/forget-password.js": {
+      "bytes": 1407,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/auth-card.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/auth-components/forget-password-form.js",
           "kind": "import-statement"
         },
         {
@@ -993,7 +1039,7 @@
       ]
     },
     "dist/routes.js": {
-      "bytes": 1197,
+      "bytes": 1381,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1009,6 +1055,10 @@
         },
         {
           "path": "dist/pages/reset-password.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/pages/forget-password.js",
           "kind": "dynamic-import"
         },
         {
@@ -1057,11 +1107,11 @@
       ]
     },
     "dist/less/main.css": {
-      "bytes": 610954,
+      "bytes": 610944,
       "imports": []
     },
     "dist/components/layout-app/index.js": {
-      "bytes": 761,
+      "bytes": 767,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1160,7 +1210,10 @@
           "bytesInOutput": 130
         },
         "dist/pages/reset-password.js": {
-          "bytesInOutput": 586
+          "bytesInOutput": 576
+        },
+        "dist/pages/forget-password.js": {
+          "bytesInOutput": 607
         },
         "dist/pages/main.js": {
           "bytesInOutput": 114
@@ -1256,21 +1309,24 @@
           "bytesInOutput": 2027
         },
         "dist/components/auth-components/login-form.js": {
-          "bytesInOutput": 1996
+          "bytesInOutput": 1984
         },
         "dist/components/auth-components/auth-header.js": {
-          "bytesInOutput": 473
+          "bytesInOutput": 475
         },
         "dist/components/auth-components/auth-card.js": {
-          "bytesInOutput": 179
+          "bytesInOutput": 177
         },
         "dist/routes.js": {
-          "bytesInOutput": 864
+          "bytesInOutput": 998
         },
         "dist/components/auth-components/register-form.js": {
           "bytesInOutput": 1261
         },
-        "dist/components/auth-components/reset-assword-form.js": {
+        "dist/components/auth-components/reset-password-form.js": {
+          "bytesInOutput": 1215
+        },
+        "dist/components/auth-components/forget-password-form.js": {
           "bytesInOutput": 850
         },
         "dist/components/demo-components/modal-demo.js": {
@@ -1349,7 +1405,7 @@
           "bytesInOutput": 0
         },
         "dist/components/layout-app/index.js": {
-          "bytesInOutput": 376
+          "bytesInOutput": 382
         },
         "dist/App.js": {
           "bytesInOutput": 431
@@ -1358,16 +1414,16 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 839576
+      "bytes": 841516
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/less/main.css": {
-          "bytesInOutput": 519776
+          "bytesInOutput": 519766
         }
       },
-      "bytes": 519777
+      "bytes": 519767
     }
   }
 }
