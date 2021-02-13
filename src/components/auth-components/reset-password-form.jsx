@@ -75,7 +75,7 @@ const ResetPasswordForm = (props) => {
 
       <Form.Item className="margin-0" style={{ paddingTop: '1rem' }}>
         <Button type="primary" htmlType="submit">
-          Reset Password
+          Reset
         </Button>
       </Form.Item>
     </Form>
