@@ -24,7 +24,7 @@ const RouteDemo = () => (
     </Link>
     &nbsp;- &nbsp;
     <Link style={{ padding: '8px' }} to="/project">
-      Project ( height 100vh)
+      Project
     </Link>{' '}
     &nbsp;- &nbsp;
     <Link style={{ padding: '8px' }} to="/reset-password">

@@ -1,0 +1,49 @@
+.project {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 1rem;
+    padding: @padding-lg;
+    padding-top: 0;
+
+    #breakpoints.md({
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    });
+
+    #breakpoints.xl({
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    });
+
+    .retina({
+        #breakpoints.xl({
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        });
+    });
+  }
+  & .ant-card-meta {
+    text-align: center;
+  }
+  &__new {
+    &:extend(.ant-card);
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    padding: @padding-lg;
+
+    &__logo {
+      font-size: 62px;
+      margin: 3rem;
+      text-align: center;
+      color: @primary-color;
+      border: 1px solid @text-color-secondary;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
