@@ -6,6 +6,29 @@
     left: 0px;
     right: 0px;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+
+    &__menu {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+    }
+
+    &__right {
+      display: grid;
+      grid-template-columns: max-content;
+      align-items: center;
+      justify-content: end;
+      grid-gap: 1rem;
+      line-height: normal;
+    }
+    &__logo {
+      width: 150px;
+      height: inherit;
+      padding: 1rem;
+      padding-left: 0;
+    }
   }
 
   &__auth {

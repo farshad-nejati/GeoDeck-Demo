@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Typography } from 'antd';
+import Navigation from './navigation';
 
 const { Header, Content, Footer } = Layout;
 const { Text } = Typography;
@@ -7,7 +8,9 @@ const { Text } = Typography;
 const LayoutApp = ({ children }) => {
   return (
     <Layout>
-      <Header className="header__main">header</Header>
+      <Header className="header__main">
+        <Navigation />
+      </Header>
       <Content className="content">{children}</Content>
       <Footer className="footer text__small">
         <Text>
