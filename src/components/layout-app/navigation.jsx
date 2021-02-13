@@ -46,9 +46,9 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="header__main__menu">
+      <div className="navigation__main__menu">
         <Image
-          className="image header__main__logo"
+          className="image navigation__main__logo"
           preview={false}
           src="./img/logo/logo.png"
         />
@@ -60,10 +60,9 @@ const Navigation = () => {
           ))}
         </Menu>
       </div>
-      <div className="header__main__right">
+      <div className="navigation__main__right">
         <div>{renderRightNavs()}</div>
       </div>
-      <div>{renderRightNavs()}</div>
     </>
   );
 };

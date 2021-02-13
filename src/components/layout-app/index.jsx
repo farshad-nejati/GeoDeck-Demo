@@ -8,7 +8,7 @@ const { Text } = Typography;
 const LayoutApp = ({ children }) => {
   return (
     <Layout>
-      <Header className="header__main">
+      <Header className="navigation__main">
         <Navigation />
       </Header>
       <Content className="content">{children}</Content>
