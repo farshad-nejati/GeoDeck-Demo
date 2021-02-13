@@ -11,9 +11,9 @@ const ResetPassword = () => {
     const history = useHistory();
     return (
       <div className="auth">
-        <Card className="auth__layout card__auth" bordered={false}>
+        <Card className="auth__card card__auth" bordered={false}>
           <Result
-            className="reset-password"
+            className="auth__result"
             status="success"
             title="Successfully send reset link!"
             subTitle=" you will receive a password recovery link at your email address in a few minutes."
