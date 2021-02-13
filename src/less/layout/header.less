@@ -1,8 +1,29 @@
 .header {
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  overflow: hidden;
+  &__main {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+  }
+
+  &__auth {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: 3rem 1fr;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    &__image {
+      grid-row: ~'1/ span 2';
+    }
+
+    &__title {
+      margin: 0 !important;
+    }
+
+    &__subtitle {
+    }
+  }
 }

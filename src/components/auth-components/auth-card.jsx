@@ -5,7 +5,7 @@ import AuthHeader from '@components/auth-components/auth-header';
 const AuthCard = ({ children, desc }) => {
   return (
     <div className="auth">
-      <Card className="auth__layout card__auth" bordered={false}>
+      <Card className="auth__card card__auth" bordered={false}>
         <AuthHeader desc={desc} />
         {children}
       </Card>
