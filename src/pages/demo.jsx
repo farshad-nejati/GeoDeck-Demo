@@ -9,11 +9,12 @@ import RouteDemo from '@components/demo-components/route-demo';
 import TypographyDemo from '@components/demo-components/typography-demo';
 import InputDemo from '@components/demo-components/input-demo';
 import FormDemo from '@components/demo-components/form-demo';
-import SelectDemo from '../components/demo-components/select-demo';
-import TableDemo from '../components/demo-components/table-demo';
-import DropDownDemo from '../components/demo-components/dropdown-demo';
-import PopoverDemo from '../components/demo-components/popover-demo';
-import TooltipDemo from '../components/demo-components/tooltop-demo';
+import SelectDemo from '@components/demo-components/select-demo';
+import TableDemo from '@components/demo-components/table-demo';
+import DropDownDemo from '@components/demo-components/dropdown-demo';
+import PopoverDemo from '@components/demo-components/popover-demo';
+import TooltipDemo from '@components/demo-components/tooltop-demo';
+import MenuDemo from '@components/demo-components/MenuDemo';
 
 const Demo = (props) => {
   console.log(props);
@@ -106,6 +107,13 @@ const Demo = (props) => {
         <Divider>Tooltip Demo</Divider>
         <div>
           <TooltipDemo />
+        </div>
+      </div>
+
+      <div style={{ width: '100%' }}>
+        <Divider>Menu Demo</Divider>
+        <div>
+          <MenuDemo />
         </div>
       </div>
       <div style={{ width: '100%', gridColumn: '1 / -1' }}>
