@@ -1,29 +1,25 @@
 import React, { useState } from 'react';
 import AuthCard from '@components/auth-components/auth-card';
-import ResetPasswordForm from '@components/auth-components/reset-password-form';
+import ForgetPasswordForm from '@components/auth-components/forget-password-form';
 import { useHistory } from 'react-router-dom';
 import { Button, Card, Result } from 'antd';
 
-const ResetPassword = () => {
+const ForgetPassword = () => {
   const [send, setSend] = useState(false);
 
   const renderResult = () => {
     const history = useHistory();
     return (
-      <div className="auth" key="reset">
+      <div className="auth">
         <Card className="auth__card card__auth" bordered={false}>
           <Result
             className="auth__result"
             status="success"
-            title="Successfully change password!"
-            subTitle=" Please use this password to login in app."
+            title="Successfully send reset link!"
+            subTitle=" you will receive a password recovery link at your email address in a few minutes."
             extra={[
-              <Button
-                type="primary"
-                key="reset-result=button"
-                onClick={() => history.goBack()}
-              >
-                Login
+              <Button type="primary" key="forget-button-back" onClick={() => history.goBack()}>
+                Go Back
               </Button>,
             ]}
           />
@@ -33,12 +29,12 @@ const ResetPassword = () => {
   };
 
   return !send ? (
-    <AuthCard desc="Reset your password">
-      <ResetPasswordForm setResult={setSend} />
+    <AuthCard desc="Forget your password?">
+      <ForgetPasswordForm setResult={setSend} />
     </AuthCard>
   ) : (
     renderResult()
   );
 };
 
-export default ResetPassword;
+export default ForgetPassword;

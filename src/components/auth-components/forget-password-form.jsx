@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { Form, Input, Button } from 'antd';
 import { MailFilled } from '@ant-design/icons';
 
-const RegisterForm = (props) => {
+const ForgetPassowrdForm = (props) => {
   console.log(props);
   const history = useHistory();
 
@@ -64,4 +64,5 @@ const RegisterForm = (props) => {
   );
 };
 
-export default RegisterForm;
+export default ForgetPassowrdForm;
+

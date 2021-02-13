@@ -8,7 +8,7 @@ const AuthHeader = ({ desc }) => (
     <img
       className="image header__auth__image"
       alt="logo"
-      src="img/logo/logo-highRes.png"
+      src="./img/logo/logo-highRes.png"
     />
     <Title level={3} className="header__auth__title">
       Welcome to <Text strong>Geo</Text>

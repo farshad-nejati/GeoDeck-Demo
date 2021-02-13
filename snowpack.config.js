@@ -39,6 +39,7 @@ module.exports = {
   routes: [
     /* Enable an SPA Fallback in development: */
     {"match": "routes", "src": ".*", "dest": "/index.html"},
+    // {"match": "all", "src": ".*", "dest": "/index.html"},
   ],
   optimize: {
     bundle: true,
