@@ -1,49 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ProjectCard from '@components/projeect-components/project-card';
 import ProjectNew from '@components/projeect-components/project-new';
 import { PageHeader } from 'antd';
 
-const createProject = (
-  title,
-  time,
-  url,
-  collaborationGroup,
-  description,
-  source,
-) => {
-  projects.push = [
-    ...projects,
-    {
-      title,
-      time,
-      url,
-      collaborationGroup,
-      description,
-      source,
-    },
-  ];
-};
 const Project = (props) => {
   const [projects, setProjects] = useState(initialProjects);
 
-  console.log(projects);
   const onCreate = (values) => {
-    setProjects(values);
+    const newProject = { ...values, time: '2/14/2021', source: 'project1.png' };
+    setProjects([...projects, newProject]);
   };
 
-  console.log(props);
   return (
     <div className="project">
-      <PageHeader
-        // className=""
-        title="Projects"
-      />
+      <PageHeader title="Projects" />
       <div className="project__cards">
         {projects.map((project, index) => {
           console.log({ ...project });
           return <ProjectCard key={index} {...project} />;
         })}
-        <ProjectNew />
+        <ProjectNew onCreate={onCreate} />
       </div>
     </div>
   );

@@ -4,7 +4,6 @@ import Meta from 'antd/lib/card/Meta';
 import { BASE_URL } from '@app/constant';
 
 const ProjectCard = (props) => {
-  console.log(props);
   const { title, description, source } = props;
   return (
     <>

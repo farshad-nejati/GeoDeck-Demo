@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Typography, Modal } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import ProjectModal from './project-modal';
+import ProjectForm from './project-form';
 
 const { Title } = Typography;
 
-const ProjectNew = () => {
+const ProjectNew = (props) => {
   const [modalVisible, setModalVisible] = useState(false);
+
+  const onCreate = (values) => {
+    props.onCreate(values);
+    setModalVisible(false);
+  };
+
   return (
     <>
       <div
@@ -24,12 +30,9 @@ const ProjectNew = () => {
         title="Add New Project"
         centered
         visible={modalVisible}
-        onOk={() => setModalVisible(false)}
-        onCancel={() => setModalVisible(false)}
+        footer={null}
       >
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
+        <ProjectForm onCreate={onCreate} onCancel={() => setModalVisible(false)} />
       </Modal>
     </>
   );
