@@ -80,7 +80,7 @@ const Gallery = (props) => {
 
   return (
     <div className="gallery">
-      <PageHeader title="Galleries" />
+      <PageHeader title="Gallery" />
       <div className="gallery__contents">
         <GalleryAction
           filters={filters}
