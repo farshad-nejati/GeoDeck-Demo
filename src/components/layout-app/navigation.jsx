@@ -16,7 +16,6 @@ const navs = [
 
 const Navigation = () => {
   const history = useHistory();
-  console.log(history);
 
   const renderProfileMenu = () => (
     <Menu>
@@ -61,12 +60,6 @@ const Navigation = () => {
           selectedKeys={history.location.pathname}
         >
           {navs.map((nav, index) => {
-            console.log(
-              `is selected ${nav.route} :  ${
-                history.location.pathname === nav.route
-              }`,
-            );
-
             return (
               <Menu.Item
                 isSelected={history.location.pathname === nav.route}

@@ -16,7 +16,6 @@ const Project = (props) => {
       <PageHeader title="Projects" />
       <div className="project__cards">
         {projects.map((project, index) => {
-          console.log({ ...project });
           return <ProjectCard key={index} {...project} />;
         })}
         <ProjectNew onCreate={onCreate} />
