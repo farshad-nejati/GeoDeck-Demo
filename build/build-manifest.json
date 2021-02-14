@@ -614,11 +614,78 @@
         }
       ]
     },
-    "dist/pages/gallery.js": {
-      "bytes": 203,
+    "_snowpack/pkg/lodash.js": {
+      "bytes": 542262,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-8c19dec8.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/moment.js": {
+      "bytes": 154033,
+      "imports": []
+    },
+    "dist/components/gallery-components/gallery-card.js": {
+      "bytes": 432,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/constant.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/gallery-components/gallery-action.js": {
+      "bytes": 1296,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@ant-design/icons.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/gallery.js": {
+      "bytes": 5830,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/lodash.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/moment.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/antd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/gallery-components/gallery-card.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/gallery-components/gallery-action.js",
           "kind": "import-statement"
         }
       ]
@@ -664,7 +731,7 @@
         }
       ]
     },
-    "dist/components/projeect-components/project-card.js": {
+    "dist/components/project-components/project-card.js": {
       "bytes": 838,
       "imports": [
         {
@@ -689,7 +756,7 @@
         }
       ]
     },
-    "dist/components/projeect-components/project-form.js": {
+    "dist/components/project-components/project-form.js": {
       "bytes": 3498,
       "imports": [
         {
@@ -702,7 +769,7 @@
         }
       ]
     },
-    "dist/components/projeect-components/project-new.js": {
+    "dist/components/project-components/project-new.js": {
       "bytes": 1207,
       "imports": [
         {
@@ -718,24 +785,24 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/projeect-components/project-form.js",
+          "path": "dist/components/project-components/project-form.js",
           "kind": "import-statement"
         }
       ]
     },
     "dist/pages/project.js": {
-      "bytes": 2321,
+      "bytes": 2288,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/projeect-components/project-card.js",
+          "path": "dist/components/project-components/project-card.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/projeect-components/project-new.js",
+          "path": "dist/components/project-components/project-new.js",
           "kind": "import-statement"
         },
         {
@@ -1203,11 +1270,11 @@
       ]
     },
     "dist/less/main.css": {
-      "bytes": 613078,
+      "bytes": 614980,
       "imports": []
     },
     "dist/components/layout-app/navigation.js": {
-      "bytes": 2607,
+      "bytes": 2492,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1329,28 +1396,31 @@
           "bytesInOutput": 6820
         },
         "dist/pages/login.js": {
-          "bytesInOutput": 141
+          "bytesInOutput": 147
         },
         "dist/pages/register.js": {
-          "bytesInOutput": 130
+          "bytesInOutput": 136
         },
         "dist/pages/reset-password.js": {
-          "bytesInOutput": 576
+          "bytesInOutput": 582
         },
         "dist/pages/forget-password.js": {
-          "bytesInOutput": 607
+          "bytesInOutput": 613
         },
         "dist/pages/main.js": {
-          "bytesInOutput": 114
+          "bytesInOutput": 120
+        },
+        "_snowpack/pkg/moment.js": {
+          "bytesInOutput": 61120
         },
         "dist/pages/gallery.js": {
-          "bytesInOutput": 117
+          "bytesInOutput": 3502
         },
         "dist/pages/project.js": {
-          "bytesInOutput": 1370
+          "bytesInOutput": 1356
         },
         "dist/pages/demo.js": {
-          "bytesInOutput": 2142
+          "bytesInOutput": 2148
         },
         "_snowpack/env.js": {
           "bytesInOutput": 100
@@ -1359,13 +1429,13 @@
           "bytesInOutput": 475
         },
         "_snowpack/pkg/common/index-57a74e37.js": {
-          "bytesInOutput": 6906
+          "bytesInOutput": 6961
         },
         "_snowpack/pkg/react.js": {
           "bytesInOutput": 61
         },
         "_snowpack/pkg/common/index-8dbeb7e4.js": {
-          "bytesInOutput": 124207
+          "bytesInOutput": 124269
         },
         "_snowpack/pkg/react-dom.js": {
           "bytesInOutput": 0
@@ -1389,7 +1459,7 @@
           "bytesInOutput": 977
         },
         "_snowpack/pkg/react-router-dom.js": {
-          "bytesInOutput": 21854
+          "bytesInOutput": 21904
         },
         "_snowpack/pkg/react-redux.js": {
           "bytesInOutput": 1822
@@ -1419,154 +1489,163 @@
           "bytesInOutput": 44
         },
         "_snowpack/pkg/common/index-83feb445.js": {
-          "bytesInOutput": 19115
+          "bytesInOutput": 19119
         },
         "_snowpack/pkg/common/Notification-8f728f2c.js": {
-          "bytesInOutput": 68477
+          "bytesInOutput": 68602
         },
         "_snowpack/pkg/common/PlusOutlined-c281d2c3.js": {
-          "bytesInOutput": 4724
+          "bytesInOutput": 4729
         },
         "_snowpack/pkg/antd.js": {
-          "bytesInOutput": 497941
+          "bytesInOutput": 499390
         },
         "_snowpack/pkg/@ant-design/icons.js": {
-          "bytesInOutput": 5148
+          "bytesInOutput": 5158
         },
         "dist/components/auth-components/login-form.js": {
-          "bytesInOutput": 1984
+          "bytesInOutput": 1986
         },
         "dist/constant.js": {
           "bytesInOutput": 14
         },
         "dist/components/auth-components/auth-header.js": {
-          "bytesInOutput": 476
+          "bytesInOutput": 480
         },
         "dist/components/auth-components/auth-card.js": {
-          "bytesInOutput": 177
+          "bytesInOutput": 179
         },
         "dist/routes.js": {
-          "bytesInOutput": 1002
+          "bytesInOutput": 1020
         },
         "dist/components/auth-components/register-form.js": {
-          "bytesInOutput": 1261
+          "bytesInOutput": 1263
         },
         "dist/components/auth-components/reset-password-form.js": {
-          "bytesInOutput": 1206
+          "bytesInOutput": 1208
         },
         "dist/components/auth-components/forget-password-form.js": {
-          "bytesInOutput": 850
+          "bytesInOutput": 852
+        },
+        "_snowpack/pkg/lodash.js": {
+          "bytesInOutput": 74050
+        },
+        "dist/components/gallery-components/gallery-card.js": {
+          "bytesInOutput": 151
+        },
+        "dist/components/gallery-components/gallery-action.js": {
+          "bytesInOutput": 581
         },
         "_snowpack/pkg/antd/lib/card/Meta.js": {
-          "bytesInOutput": 53037
+          "bytesInOutput": 53305
         },
-        "dist/components/projeect-components/project-card.js": {
-          "bytesInOutput": 305
+        "dist/components/project-components/project-card.js": {
+          "bytesInOutput": 307
         },
-        "dist/components/projeect-components/project-form.js": {
-          "bytesInOutput": 1874
+        "dist/components/project-components/project-form.js": {
+          "bytesInOutput": 1876
         },
-        "dist/components/projeect-components/project-new.js": {
-          "bytesInOutput": 474
+        "dist/components/project-components/project-new.js": {
+          "bytesInOutput": 478
         },
         "dist/components/demo-components/modal-demo.js": {
           "bytesInOutput": 710
         },
         "dist/components/demo-components/tabs-demo.js": {
-          "bytesInOutput": 304
+          "bytesInOutput": 310
         },
         "dist/components/demo-components/card-demo.js": {
-          "bytesInOutput": 743
+          "bytesInOutput": 745
         },
         "dist/components/demo-components/button-demo.js": {
-          "bytesInOutput": 505
+          "bytesInOutput": 507
         },
         "dist/components/demo-components/route-demo.js": {
-          "bytesInOutput": 712
+          "bytesInOutput": 714
         },
         "dist/components/demo-components/typography-demo.js": {
-          "bytesInOutput": 1210
+          "bytesInOutput": 1214
         },
         "dist/components/demo-components/input-demo.js": {
-          "bytesInOutput": 1270
+          "bytesInOutput": 1274
         },
         "dist/components/demo-components/form-demo.js": {
-          "bytesInOutput": 1250
+          "bytesInOutput": 1254
         },
         "dist/components/demo-components/select-remote.js": {
-          "bytesInOutput": 932
+          "bytesInOutput": 934
         },
         "dist/components/demo-components/select-multiple.js": {
-          "bytesInOutput": 787
+          "bytesInOutput": 791
         },
         "dist/components/demo-components/select-multiple-with-hide.js": {
-          "bytesInOutput": 504
+          "bytesInOutput": 506
         },
         "dist/components/demo-components/select-demo.js": {
-          "bytesInOutput": 1189
+          "bytesInOutput": 1193
         },
         "dist/components/demo-components/table-editable.js": {
-          "bytesInOutput": 2295
+          "bytesInOutput": 2299
         },
         "dist/components/demo-components/table-with-tag.js": {
-          "bytesInOutput": 906
+          "bytesInOutput": 912
         },
         "dist/components/demo-components/table-with-sort.js": {
-          "bytesInOutput": 1053
+          "bytesInOutput": 1059
         },
         "dist/components/demo-components/table-with-selection.js": {
-          "bytesInOutput": 1039
+          "bytesInOutput": 1041
         },
         "dist/components/demo-components/table-demo.js": {
-          "bytesInOutput": 579
+          "bytesInOutput": 583
         },
         "dist/components/demo-components/dropdown-demo.js": {
-          "bytesInOutput": 1610
+          "bytesInOutput": 1616
         },
         "dist/components/demo-components/popover-demo.js": {
-          "bytesInOutput": 445
+          "bytesInOutput": 447
         },
         "dist/components/demo-components/tooltop-demo.js": {
-          "bytesInOutput": 1758
+          "bytesInOutput": 1762
         },
         "dist/components/demo-components/MenuDemo.js": {
-          "bytesInOutput": 212
+          "bytesInOutput": 214
         },
         "_snowpack/pkg/history.js": {
-          "bytesInOutput": 2292
+          "bytesInOutput": 2298
         },
         "dist/history.js": {
           "bytesInOutput": 12
         },
         "dist/components/spinner/index.js": {
-          "bytesInOutput": 57
+          "bytesInOutput": 59
         },
         "dist/less/main.css": {
           "bytesInOutput": 0
         },
         "dist/components/layout-app/navigation.js": {
-          "bytesInOutput": 1313
+          "bytesInOutput": 1222
         },
         "dist/components/layout-app/index.js": {
-          "bytesInOutput": 402
+          "bytesInOutput": 412
         },
         "dist/App.js": {
-          "bytesInOutput": 431
+          "bytesInOutput": 433
         },
         "dist/index.js": {
           "bytesInOutput": 122
         }
       },
-      "bytes": 856836
+      "bytes": 998347
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/less/main.css": {
-          "bytesInOutput": 521611
+          "bytesInOutput": 523251
         }
       },
-      "bytes": 521612
+      "bytes": 523252
     }
   }
 }
