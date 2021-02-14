@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProjectCard from '@components/projeect-components/project-card';
-import ProjectNew from '@components/projeect-components/project-new';
+import ProjectCard from '@components/project-components/project-card';
+import ProjectNew from '@components/project-components/project-new';
 import { PageHeader } from 'antd';
 
 const Project = (props) => {
