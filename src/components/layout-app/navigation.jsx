@@ -6,8 +6,7 @@ import {
   SettingOutlined,
   LogoutOutlined,
 } from '@ant-design/icons';
-
-const { Text } = Typography;
+import { BASE_URL } from '@app/constant';
 
 const navs = [
   { key: 'project', label: 'Project', route: '/project' },
@@ -36,7 +35,7 @@ const Navigation = () => {
     <>
       <Dropdown overlay={renderProfileMenu} trigger={['click']}>
         <a className="navigation__profile" onClick={(e) => e.preventDefault()}>
-          <Avatar src="./img/avatar/ava.png" />
+          <Avatar src={`${BASE_URL}/avatar/ava.png`} />
           Jane Doe
           <DownOutlined />
         </a>
@@ -53,7 +52,7 @@ const Navigation = () => {
           preview={false}
           src="./img/logo/logo.png"
         /> */}
-          <img src="/img/logo/logo.png" className="image" />
+          <img src={`${BASE_URL}/logo/logo.png`} className="image" />
         </div>
 
         <Menu

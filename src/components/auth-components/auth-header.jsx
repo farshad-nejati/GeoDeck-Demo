@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography } from 'antd';
+import { BASE_URL } from '@app/constant';
 
 const { Title, Text } = Typography;
 
@@ -8,7 +9,7 @@ const AuthHeader = ({ desc }) => (
     <img
       className="image header__auth__image"
       alt="logo"
-      src="./img/logo/logo-highRes.png"
+      src= {`${BASE_URL}/logo/logo-highRes.png `}
     />
     <Title level={3} className="header__auth__title">
       Welcome to <Text strong>Geo</Text>
