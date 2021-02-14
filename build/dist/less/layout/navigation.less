@@ -1,0 +1,44 @@
+.navigation {
+  &__main {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+
+    &__menu {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      .ant-menu-item {
+        margin-top: 0 !important;
+        border-width: 0 !important;
+      }
+      .ant-menu-horizontal {
+        border-bottom: unset;
+      }
+    }
+
+    &__right {
+      display: grid;
+      grid-template-columns: max-content;
+      align-items: center;
+      justify-content: end;
+      grid-gap: 1rem;
+      line-height: normal;
+    }
+    &__logo {
+      width: 100px;      
+    }
+  }
+  &__profile {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    grid-gap: 1rem;
+    font-size: @font-size-base - 1;
+  }
+}
