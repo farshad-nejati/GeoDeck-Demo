@@ -29,6 +29,7 @@ const sourceToTag = (source) => {
   }
   return 'all';
 };
+
 const Gallery = (props) => {
   const [galleries, setGalleries] = useState(initialGalleries);
   const [active, setActive] = useState({ sort: 'default', filter: 'all' });
@@ -222,7 +223,7 @@ const initialGalleries = [
     username: 'example project',
     collaborationGroup: 'Lab Internal',
     description: 'this is a example project',
-    source: 'video.webm',
+    source: 'gallery11.png',
   },
   //   {
   //     id: 13,
