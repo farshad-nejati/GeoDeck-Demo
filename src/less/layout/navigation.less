@@ -13,6 +13,13 @@
     &__menu {
       display: grid;
       grid-template-columns: min-content 1fr;
+      .ant-menu-item {
+        margin-top: 0 !important;
+        border-width: 0 !important;
+      }
+      .ant-menu-horizontal {
+        border-bottom: unset;
+      }
     }
 
     &__right {
@@ -24,10 +31,7 @@
       line-height: normal;
     }
     &__logo {
-      width: 150px;
-      height: inherit;
-      padding: 1rem;
-      padding-left: 0;
+      width: 100px;      
     }
   }
   &__profile {

@@ -47,17 +47,37 @@ const Navigation = () => {
   return (
     <>
       <div className="navigation__main__menu">
-        <Image
+        <div className="navigation__main__logo">
+          {/* <Image
           className="image navigation__main__logo"
           preview={false}
           src="./img/logo/logo.png"
-        />
-        <Menu mode="horizontal" defaultSelectedKeys={history.location.pathname}>
-          {navs.map((nav, index) => (
-            <Menu.Item key={nav.key} onClick={() => history.push(nav.route)}>
-              {nav.label}
-            </Menu.Item>
-          ))}
+        /> */}
+          <img src="/img/logo/logo.png" className="image" />
+        </div>
+
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={history.location.pathname}
+          selectedKeys={history.location.pathname}
+        >
+          {navs.map((nav, index) => {
+            console.log(
+              `is selected ${nav.route} :  ${
+                history.location.pathname === nav.route
+              }`,
+            );
+
+            return (
+              <Menu.Item
+                isSelected={history.location.pathname === nav.route}
+                key={nav.key}
+                onClick={() => history.push(nav.route)}
+              >
+                {nav.label}
+              </Menu.Item>
+            );
+          })}
         </Menu>
       </div>
       <div className="navigation__main__right">

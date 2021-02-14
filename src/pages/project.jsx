@@ -7,7 +7,7 @@ const Project = (props) => {
   const [projects, setProjects] = useState(initialProjects);
 
   const onCreate = (values) => {
-    const newProject = { ...values, time: '2/14/2021', source: 'project1.png' };
+    const newProject = { id: projects.length, ...values, time: '2/14/2021', source: 'project1.png' };
     setProjects([...projects, newProject]);
   };
 
