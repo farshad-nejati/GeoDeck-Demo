@@ -514,7 +514,7 @@
       ]
     },
     "dist/components/auth-components/reset-password-form.js": {
-      "bytes": 2385,
+      "bytes": 2402,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -535,7 +535,7 @@
       ]
     },
     "dist/pages/reset-password.js": {
-      "bytes": 1379,
+      "bytes": 1385,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -628,7 +628,7 @@
       "imports": []
     },
     "dist/components/gallery-components/gallery-card.js": {
-      "bytes": 432,
+      "bytes": 464,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -662,7 +662,7 @@
       ]
     },
     "dist/pages/gallery.js": {
-      "bytes": 5830,
+      "bytes": 5845,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -757,7 +757,7 @@
       ]
     },
     "dist/components/project-components/project-form.js": {
-      "bytes": 3498,
+      "bytes": 3502,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -791,7 +791,7 @@
       ]
     },
     "dist/pages/project.js": {
-      "bytes": 2288,
+      "bytes": 2335,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1128,8 +1128,17 @@
         }
       ]
     },
+    "dist/components/demo-components/color-demo.js": {
+      "bytes": 1061,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/pages/demo.js": {
-      "bytes": 4927,
+      "bytes": 5201,
       "imports": [
         {
           "path": "_snowpack/pkg/react.js",
@@ -1197,6 +1206,10 @@
         },
         {
           "path": "dist/components/demo-components/MenuDemo.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/demo-components/color-demo.js",
           "kind": "import-statement"
         }
       ]
@@ -1270,7 +1283,7 @@
       ]
     },
     "dist/less/main.css": {
-      "bytes": 614980,
+      "bytes": 615506,
       "imports": []
     },
     "dist/components/layout-app/navigation.js": {
@@ -1402,7 +1415,7 @@
           "bytesInOutput": 136
         },
         "dist/pages/reset-password.js": {
-          "bytesInOutput": 582
+          "bytesInOutput": 588
         },
         "dist/pages/forget-password.js": {
           "bytesInOutput": 613
@@ -1414,13 +1427,13 @@
           "bytesInOutput": 61120
         },
         "dist/pages/gallery.js": {
-          "bytesInOutput": 3502
+          "bytesInOutput": 3517
         },
         "dist/pages/project.js": {
-          "bytesInOutput": 1356
+          "bytesInOutput": 1373
         },
         "dist/pages/demo.js": {
-          "bytesInOutput": 2148
+          "bytesInOutput": 2264
         },
         "_snowpack/env.js": {
           "bytesInOutput": 100
@@ -1498,7 +1511,7 @@
           "bytesInOutput": 4729
         },
         "_snowpack/pkg/antd.js": {
-          "bytesInOutput": 499390
+          "bytesInOutput": 499392
         },
         "_snowpack/pkg/@ant-design/icons.js": {
           "bytesInOutput": 5158
@@ -1522,7 +1535,7 @@
           "bytesInOutput": 1263
         },
         "dist/components/auth-components/reset-password-form.js": {
-          "bytesInOutput": 1208
+          "bytesInOutput": 1217
         },
         "dist/components/auth-components/forget-password-form.js": {
           "bytesInOutput": 852
@@ -1531,7 +1544,7 @@
           "bytesInOutput": 74050
         },
         "dist/components/gallery-components/gallery-card.js": {
-          "bytesInOutput": 151
+          "bytesInOutput": 174
         },
         "dist/components/gallery-components/gallery-action.js": {
           "bytesInOutput": 581
@@ -1543,7 +1556,7 @@
           "bytesInOutput": 307
         },
         "dist/components/project-components/project-form.js": {
-          "bytesInOutput": 1876
+          "bytesInOutput": 1873
         },
         "dist/components/project-components/project-new.js": {
           "bytesInOutput": 478
@@ -1611,6 +1624,9 @@
         "dist/components/demo-components/MenuDemo.js": {
           "bytesInOutput": 214
         },
+        "dist/components/demo-components/color-demo.js": {
+          "bytesInOutput": 648
+        },
         "_snowpack/pkg/history.js": {
           "bytesInOutput": 2298
         },
@@ -1636,16 +1652,16 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 998347
+      "bytes": 999180
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/less/main.css": {
-          "bytesInOutput": 523251
+          "bytesInOutput": 523587
         }
       },
-      "bytes": 523252
+      "bytes": 523588
     }
   }
 }

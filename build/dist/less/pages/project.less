@@ -1,52 +1,65 @@
 .project {
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
     padding: @padding-lg;
     padding-top: 0;
-
-    #breakpoints.md({
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    });
-
-    #breakpoints.xl({
-        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-    });
-
-    .retina({
-        #breakpoints.xl({
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        });
-    });
   }
   & .ant-card-meta {
     text-align: center;
   }
   &__new {
     &:extend(.ant-card);
+    cursor: pointer;
     display: grid;
     grid-template-rows: 1fr min-content;
     align-items: center;
     justify-items: center;
     height: 100%;
     padding: @padding-md;
-    min-height: 15rem;
-
-    cursor: pointer;
+    min-height: 200px;
+    #breakpoints.sm({
+      min-height: 15rem;
+    });
 
     &__logo {
-      font-size: 62px;
-      margin-bottom: 1rem;
+      font-size: 3rem;
       text-align: center;
       color: @primary-color;
       border: 1px solid @text-color-secondary;
-      border-radius: 50px;
-      width: 100px;
-      height: 100px;
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      margin: 3rem 0;
+      width: 75px;
+      height: 75px;
+
+      #breakpoints.md({
+        margin: 0;
+        margin-bottom: 1rem;
+        // width: 75px;
+        // height: 75px;
+      });
+
+      #breakpoints.xl({
+        width: 100px;
+        height: 100px;
+      });
+
+      .retina({
+        width: 100px;
+        height: 100px;
+      });
+    }
+  }
+
+  &__form {
+    &__buttons {
+      // display: grid;
+      // justify-content: end;
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: @padding-lg;
     }
   }
 }

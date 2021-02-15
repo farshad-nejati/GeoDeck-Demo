@@ -1,0 +1,39 @@
+.ant-image {
+  #aspect-ratio-parrent();
+  #aspect-ratio-parrent.hd();
+
+
+  img {
+    border-radius: inherit;
+    .aspect-ratio-child();
+  }
+
+  &-preview {
+    &-img {
+      &-wrapper {
+        padding: 2rem;
+        #breakpoints.md({
+        padding: 4rem;
+    });
+      }
+
+      // padding: 1rem;
+      // #breakpoints.md({
+      //     padding: 3rem;
+      // });
+    }
+
+    &-body {
+      margin: 4rem 2rem;
+    }
+    &-switch-left,
+    &-switch-right {
+      background-color: @primary-color;
+      color: @black;
+      &-disabled {
+        background-color: @text-color;
+        color: @text-color-secondary;
+      }
+    }
+  }
+}
