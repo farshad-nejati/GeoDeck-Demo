@@ -1,22 +1,27 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-
 // redux...
-import { Provider } from 'react-redux';
-import store from '@redux/store';
+// import { Provider } from 'react-redux';
+// import store from '@redux/store';
+
+// GraphQL with appolo ..
+import client from '@app/client';
+import { ApolloProvider } from '@apollo/client';
+
 
 // router...
 import { routes, privateRoutes } from '@app/routes';
 import history from '@app/history';
 import Spinner from '@components/spinner';
-import '@less/main.less';
 import LayoutApp from './components/layout-app';
+import '@less/main.less';
 // import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
-function App() {
+const  App = () => {
   return (
-    <Provider store={store}>
+    <ApolloProvider client={client}>
+    {/* <Provider store={store}> //redux store */}
       <Router history={history}>
         <React.Suspense fallback={<Spinner />}>
           <Switch>
@@ -43,7 +48,8 @@ function App() {
           </Switch>
         </React.Suspense>
       </Router>
-    </Provider>
+    </ApolloProvider>
+    // </Provider>
   );
 }
 
