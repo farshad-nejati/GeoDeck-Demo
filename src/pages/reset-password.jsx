@@ -21,7 +21,7 @@ const ResetPassword = () => {
               <Button
                 type="primary"
                 key="reset-result=button"
-                onClick={() => history.goBack()}
+                onClick={() => history.push('/login')}
               >
                 Login
               </Button>,
