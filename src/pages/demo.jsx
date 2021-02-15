@@ -16,6 +16,7 @@ import PopoverDemo from '@components/demo-components/popover-demo';
 import TooltipDemo from '@components/demo-components/tooltop-demo';
 import MenuDemo from '@components/demo-components/MenuDemo';
 import ColorDemo from '@components/demo-components/color-demo';
+import QueryDemo from '@components/demo-components/query-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -52,6 +53,13 @@ const Demo = (props) => {
       </div>
 
       <div style={{ width: '100%' }}>
+        <Divider>Apollo - Query Demo</Divider>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          <QueryDemo />
+        </div>
+      </div>
+
+      <div style={{ width: '100%' }}>
         <Divider>Tab Demo</Divider>
         <div>
           <DemoTab />
@@ -60,7 +68,7 @@ const Demo = (props) => {
 
       <div style={{ width: '100%' }}>
         <Divider>Modal Demo</Divider>
-        <div style={{marginBottom: "4rem"}}>
+        <div style={{ marginBottom: '4rem' }}>
           <ModalDemo />
         </div>
         <Divider>Menu Demo</Divider>
