@@ -100,17 +100,17 @@ const ProjectForm = (props) => {
       </Form.Item>
 
       <Form.Item
-        className="margin-0"
-        style={{ display: 'grid', justifyContent: 'end' }}
+        className="margin-0 project__form__buttons"
+        // style={{ display: 'grid', justifyContent: 'end' }}
       >
         <Input.Group className="grid__two">
           <Form.Item className="margin-0">
-            <Button type="default" onClick={props.onCancel}>
+            <Button block type="default" onClick={props.onCancel}>
               Cancel
             </Button>
           </Form.Item>
           <Form.Item className="margin-0">
-            <Button type="primary" htmlType="submit">
+            <Button block type="primary" htmlType="submit">
               Create
             </Button>
           </Form.Item>
