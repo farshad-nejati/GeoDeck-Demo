@@ -15,6 +15,7 @@ import DropDownDemo from '@components/demo-components/dropdown-demo';
 import PopoverDemo from '@components/demo-components/popover-demo';
 import TooltipDemo from '@components/demo-components/tooltop-demo';
 import MenuDemo from '@components/demo-components/MenuDemo';
+import ColorDemo from '@components/demo-components/color-demo';
 
 const Demo = (props) => {
   console.log(props);
@@ -30,6 +31,12 @@ const Demo = (props) => {
         padding: '32px 24px',
       }}
     >
+      <div style={{ width: '100%' }}>
+        <Divider>Color Demo</Divider>
+        <div>
+          <ColorDemo />
+        </div>
+      </div>
       <div style={{ width: '100%' }}>
         <Divider>Button Demo</Divider>
         <div>
@@ -53,8 +60,12 @@ const Demo = (props) => {
 
       <div style={{ width: '100%' }}>
         <Divider>Modal Demo</Divider>
-        <div>
+        <div style={{marginBottom: "4rem"}}>
           <ModalDemo />
+        </div>
+        <Divider>Menu Demo</Divider>
+        <div>
+          <MenuDemo />
         </div>
       </div>
 
@@ -110,12 +121,6 @@ const Demo = (props) => {
         </div>
       </div>
 
-      <div style={{ width: '100%' }}>
-        <Divider>Menu Demo</Divider>
-        <div>
-          <MenuDemo />
-        </div>
-      </div>
       <div style={{ width: '100%', gridColumn: '1 / -1' }}>
         <Divider>Table Demo</Divider>
         <div>
