@@ -7,14 +7,19 @@ const Project = (props) => {
   const [projects, setProjects] = useState(initialProjects);
 
   const onCreate = (values) => {
-    const newProject = { id: projects.length, ...values, time: '2/14/2021', source: 'project1.png' };
+    const newProject = {
+      id: projects.length,
+      ...values,
+      time: '2/14/2021',
+      source: 'project1.png',
+    };
     setProjects([...projects, newProject]);
   };
 
   return (
     <div className="project">
       <PageHeader title="Projects" />
-      <div className="project__cards">
+      <div className="project__cards grid__responsive">
         {projects.map((project, index) => {
           return <ProjectCard key={index} {...project} />;
         })}

@@ -90,7 +90,7 @@ const Gallery = (props) => {
           onFilter={onFilter}
         />
 
-        <div className="gallery__cards">
+        <div className="gallery__cards grid__responsive">
           <Image.PreviewGroup>
             {currentGalleries.map((Gallery, index) => {
               return <GalleryCard key={index} {...Gallery} />;

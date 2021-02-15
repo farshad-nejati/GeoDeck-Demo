@@ -1,24 +1,7 @@
 .project {
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
     padding: @padding-lg;
     padding-top: 0;
-
-    #breakpoints.md({
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    });
-
-    #breakpoints.xl({
-        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-    });
-
-    .retina({
-        #breakpoints.xl({
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        });
-    });
   }
   & .ant-card-meta {
     text-align: center;
@@ -57,7 +40,7 @@
         // width: 75px;
         // height: 75px;
       });
-      
+
       #breakpoints.xl({
         width: 100px;
         height: 100px;
