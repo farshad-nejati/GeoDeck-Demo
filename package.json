@@ -13,8 +13,10 @@
     "test": "web-test-runner \"src/**/*.test.jsx\""
   },
   "dependencies": {
+    "@apollo/client": "^3.3.10",
     "antd": "^4.12.2",
     "axios": "^0.21.1",
+    "graphql": "^15.5.0",
     "history": "^5.0.0",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
