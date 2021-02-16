@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // GraphQL with appolo ..
 import client from '@app/client';
 import { ApolloProvider } from '@apollo/client';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 
 // router...
